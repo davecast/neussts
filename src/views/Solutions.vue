@@ -1,5 +1,5 @@
 <template>
   <div>
-    This is de Solutions Page
+    <h1>This is an Solutions page</h1>
   </div>
 </template>

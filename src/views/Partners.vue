@@ -1,5 +1,5 @@
 <template>
   <div>
-    This is the Partners Page
+    <h1>This is an Partners page</h1>
   </div>
 </template>
