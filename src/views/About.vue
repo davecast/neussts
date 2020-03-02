@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <Banner type="small" img="about-banner.png">
+    <Banner type="small" img="about-banner.jpg">
       <h2
         class="banner__title--medium banner__title--separator text--white text--muli text--extrabold mb--x3"
       >

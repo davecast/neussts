@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Banner type="big" img="banner.png">
+    <Banner type="big" img="banner.jpg">
       <h1
         class="banner__title--big text--center text--white text--muli text--extrabold mb--x4"
       >
