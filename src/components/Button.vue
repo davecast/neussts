@@ -1,13 +1,41 @@
 <template>
-  <router-link class="btn" :class="[colorType]" :to="routeLink">
-    <slot></slot>
+  <router-link
+    class="btn"
+    :class="[colorType]"
+    :to="routeLink"
+    v-slot="{ href, route, navigate }"
+  >
+    <a :href="href" @click="navigate" :style="styleButton">
+      <slot></slot>
+    </a>
   </router-link>
 </template>
 
 <script>
 export default {
   name: "Button",
-  props: ["routeLink", "colorType"]
+  props: {
+    routeLink: {
+      type: String,
+      default: "/"
+    },
+    background: {
+      type: String,
+      default: "ffffff"
+    },
+    color: {
+      type: String,
+      default: "2d2d2d"
+    }
+  },
+  data() {
+    return {
+      styleButton: {
+        color: `#${this.color}`,
+        background: `#${this.background}`
+      }
+    };
+  }
 };
 </script>
 
@@ -17,11 +45,7 @@ export default {
   margin: 0 auto;
   width: fit-content;
   padding: 10px 35px;
-  background-color: #fff;
-  color: #2d2d2d;
   border-radius: 5px;
-}
-.btn--yellow {
-  background-color: #efdc30;
+  text-transform: uppercase;
 }
 </style>
