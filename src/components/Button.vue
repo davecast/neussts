@@ -6,7 +6,9 @@
     v-slot="{ href, route, navigate }"
   >
     <a :href="href" @click="navigate" :style="styleButton">
-      <slot></slot>
+      <span>
+        <slot></slot>
+      </span>
     </a>
   </router-link>
 </template>
@@ -41,11 +43,19 @@ export default {
 
 <style scoped>
 .btn {
+  position: relative;
+  overflow: hidden;
   display: block;
   margin: 0 auto;
   width: fit-content;
   padding: 10px 35px;
   border-radius: 5px;
   text-transform: uppercase;
+  transition: all 0.25s ease-in;
+}
+.btn:hover {
+  background: #2d2d2d !important;
+  color: #fff !important;
+  transform: translateY(-1.5px);
 }
 </style>

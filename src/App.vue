@@ -2,16 +2,19 @@
   <div id="app">
     <Header />
     <router-view />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "App",
   components: {
-    Header
+    Header,
+    Footer
   }
 };
 </script>
@@ -124,6 +127,9 @@ h6 {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
 /*Tools*/
 
 .container {
@@ -131,11 +137,46 @@ h6 {
   max-width: 1200px;
   margin: 0 auto;
 }
+.content--768--center {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.back--white {
+  background-color: #fff;
+}
+.back--black {
+  background-color: #2d2d2d;
+}
+.back--yellow {
+  background-color: #d6c600;
+}
+
+.grid {
+  display: grid;
+}
+.grid--4--12 {
+  max-width: calc(100% - 33.33%);
+  margin: 0 auto;
+}
+.grid__3 {
+  grid-template: 1fr / 1fr 1fr 1fr;
+}
+.grid__gap--35 {
+  grid-gap: 35px;
+}
+
 .text--center {
   text-align: center;
 }
 .text--white {
   color: #fff;
+}
+.text--black {
+  color: #2d2d2d;
+}
+.text--yellow {
+  color: #d6c600;
 }
 .text--muli {
   font-family: "Muli", sans-serif;
@@ -146,7 +187,10 @@ h6 {
 .text--normal {
   font-size: 18px;
   line-height: 31px;
-  color: #fff;
+}
+.text--big {
+  font-size: 24px;
+  line-height: 37px;
 }
 
 .mb--x1 {

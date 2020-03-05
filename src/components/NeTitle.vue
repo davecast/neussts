@@ -59,7 +59,7 @@ export default {
   margin: 0 auto;
   left: 0;
   right: 0;
-  bottom: -2.5px;
+  bottom: -2px;
 }
 .title.title__left::before {
   right: auto;
@@ -69,7 +69,7 @@ export default {
 }
 .title__first {
   font-size: 28px;
-  line-height: 28px;
+  line-height: 22px;
   font-family: "Muli", sans-serif;
   text-transform: uppercase;
 }

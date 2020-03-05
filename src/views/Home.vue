@@ -10,31 +10,76 @@
         our solutions
       </NeButton>
     </Banner>
-    <DcSection backgroundImage="exp_back.png" attached>
+    <DcSection class="back--white" backgroundImage="exp_back.png" attached>
       <div class="container">
         <Title title="experiences" color="2D2D2D" />
+        <div class="grid grid--4--12 grid__3 grid__gap--35 mb--x3">
+          <div class="feature">
+            <figure class="feature__img">
+              <img src="@/assets/exp_1.png" />
+            </figure>
+            <h3 class="feature__text text--center text--yellow">
+              CONSULTING <br />MANAGER
+            </h3>
+          </div>
+          <div class="feature">
+            <figure class="feature__img">
+              <img src="@/assets/exp_2.png" />
+            </figure>
+            <h3 class="feature__text text--center text--yellow">
+              PROCUREMENT <br />SERVICES
+            </h3>
+          </div>
+          <div class="feature">
+            <figure class="feature__img">
+              <img src="@/assets/exp_3.png" />
+            </figure>
+            <h3 class="feature__text text--center text--yellow">
+              REPRESENTATIONS &amp; <br />PROMOTIONS
+            </h3>
+          </div>
+        </div>
         <NeButton routeLink="/experience" color="2d2d2d" background="EFDC30">
           what we do for
         </NeButton>
       </div>
     </DcSection>
-    <DcSection backgroundImage="about__back.png">
+    <DcSection
+      class="back--yellow"
+      backgroundImage="about__back.png"
+      backgroundPosition="bottom"
+    >
       <div class="container">
-        about us
+        <p
+          class="text--normal text--white mb--x3 text--center content--768--center"
+        >
+          We offer solutions to the problems your company faces in the
+          Operations, Production, Maintenance and Acquisitions processes.
+        </p>
+        <p class="text--big text--white mb--x3 text--center">
+          Making efficient and effective decisions for your business.
+        </p>
         <NeButton routeLink="/about">
           more about us
         </NeButton>
       </div>
     </DcSection>
-    <DcSection backgroundImage="products__back.jpg">
+    <DcSection class="back--black" backgroundImage="products__back.jpg">
       <div class="container">
         <Title title="products brands" color="FFFFFF" />
+        <p
+          class="text--normal text--white mb--x3 text--center content--768--center"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+          itaque nulla recusandae at quod architecto autem tempore possimus
+          tempora.
+        </p>
         <NeButton routeLink="/products" color="2d2d2d" background="EFDC30">
           our products
         </NeButton>
       </div>
     </DcSection>
-    <DcSection attached>
+    <DcSection backgroundImage="exp_back.png" attached>
       <div class="container">
         <Title title="contact us" color="2D2D2D" position="left" />
       </div>
@@ -60,4 +105,19 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.feature {
+  text-align: center;
+}
+.feature__img {
+  max-width: 200px;
+  margin: 0 auto 25px;
+}
+.feature__img img {
+  max-width: 100%;
+}
+.feature__text {
+  font-size: 18px;
+  line-height: 24px;
+}
+</style>
