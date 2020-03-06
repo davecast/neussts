@@ -23,13 +23,19 @@ export default {
     color: {
       type: String,
       default: "2d2d2d"
+    },
+    align: {
+      type: String,
+      default: "center"
     }
   },
   data() {
     return {
       styleButton: {
         color: `#${this.color}`,
-        background: `#${this.background}`
+        background: `#${this.background}`,
+        marginLeft: this.align === "left" ? "0" : "auto",
+        marginRight: this.align === "right" ? "0" : "auto"
       }
     };
   }

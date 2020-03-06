@@ -27,6 +27,10 @@ export default {
       type: Boolean,
       default: true
     },
+    pd: {
+      type: String,
+      default: "70px 0px"
+    },
     backgroundPosition: {
       type: String,
       default: "center center"

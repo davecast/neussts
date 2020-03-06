@@ -40,6 +40,19 @@
         </section>
       </div>
     </DcSection>
+    <DcSection :pdTop="false" :pdBottom="false" class="back--grey--b">
+      <div class="container">
+        <div class="footer__bottom">
+          <p>
+            © 2020 <strong>NEUSS TECNICAL SERVICES</strong>. All Rights
+            Reserved. <router-link to="/">Terms of Service</router-link>
+            <span>|</span> <router-link to="/">Privacy</router-link>
+            <span>|</span>
+            <router-link to="/">Quality Policy</router-link>
+          </p>
+        </div>
+      </div>
+    </DcSection>
   </footer>
 </template>
 
@@ -100,5 +113,28 @@ export default {
 .footer__menu a:hover,
 .footer__menu a.router-link-exact-active {
   color: #efdc30;
+}
+.footer__bottom {
+  padding: 15px 0;
+}
+.footer__bottom p {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+}
+.footer__bottom strong {
+  color: #d6c600;
+}
+.footer__bottom a {
+  font-family: "Open Sans", sans-serif;
+  color: #d6c600;
+}
+.footer__bottom a:hover {
+  color: #fff;
+}
+.footer__bottom span {
+  display: inline-block;
+  margin: 0 3px 0 5px;
 }
 </style>

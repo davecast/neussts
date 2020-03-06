@@ -71,5 +71,6 @@ export default {
   font-size: 28px;
   line-height: 22px;
   text-transform: uppercase;
+  font-weight: 900;
 }
 </style>

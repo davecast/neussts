@@ -66,7 +66,7 @@
     </DcSection>
     <DcSection class="back--black" backgroundImage="products__back.jpg">
       <div class="container">
-        <Title title="products brands" color="FFFFFF" />
+        <Title title="products &amp; brands" color="FFFFFF" />
         <p
           class="text--normal text--white mb--x3 text--center content--768--center"
         >
@@ -89,10 +89,41 @@
         <div class="grid grid__1--1">
           <div class="grid__item--pd pd__left--col">
             <Title title="contact us" color="2D2D2D" position="left" />
+            <ul class="contact__information">
+              <li class="text--grey--a contact__information--size mb--x2">
+                <header class="contact__information--header">
+                  <i class="wz-icon wz-point"></i>
+                  <h4 class="text--uppercase">address</h4>
+                </header>
+                <p class="contact__information--text text__content--small ">
+                  37 Estelle-MAuffette Notre Dame De L'Ile-Perrot (QC) J7V 9R8
+                </p>
+              </li>
+              <li class="text--grey--a contact__information--size">
+                <header class="contact__information--header">
+                  <i class="wz-icon wz-envelope"></i>
+                  <h4 class="text--uppercase">email</h4>
+                </header>
+                <p class="contact__information--text text__content--small ">
+                  info@neuss-ts.com
+                </p>
+              </li>
+            </ul>
           </div>
           <div
-            class="back--yellow grid__item--pd contact__section--cover pd__right--col"
-          ></div>
+            class="back--yellow grid__item--pd content--cover contact--cover pd__right--col content--rigth--pd"
+          >
+            <h2 class="title__section text--white mb--x3">
+              HAVE A QUESTIONS OR HAVE A SPECIAL REQUEST?
+            </h2>
+            <p class="text--normal text--white text__content--small  mb--x3">
+              We are ready to help you. In fact, we promise to get back to you
+              in less than 12 hours.
+            </p>
+            <NeButton routeLink="/contact" align="left">
+              contact us for a quote
+            </NeButton>
+          </div>
         </div>
       </div>
     </DcSection>
@@ -132,10 +163,27 @@ export default {
   font-size: 18px;
   line-height: 24px;
 }
-.contact__section--cover {
+.contact--cover {
   background-image: url("~@/assets/contact__back.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+}
+.contact__information--header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contact__information--header i {
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 5px;
+  width: 20px;
+  text-align: center;
+}
+.contact__information--size {
+  font-size: 18px;
+  line-height: 18px;
+}
+.contact__information--text {
+  padding-left: 25px;
+  line-height: 24px;
 }
 </style>
