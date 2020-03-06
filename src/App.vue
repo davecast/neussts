@@ -154,8 +154,15 @@ p {
 .grid__item--pd {
   padding: 70px 0px;
 }
+.grid__item--center-v {
+  align-self: center;
+}
 .grid--4--12 {
   max-width: calc(100% - 33.33%);
+  margin: 0 auto;
+}
+.grid--2--12 {
+  max-width: calc(100% - 16.67%);
   margin: 0 auto;
 }
 .grid__1--1 {
@@ -197,7 +204,9 @@ p {
 .content--rigth--pd {
   padding-left: 80px;
 }
-
+.content--left--pd {
+  padding-right: 80px;
+}
 .title__section {
   font-size: 26px;
   line-height: 32px;
@@ -207,6 +216,12 @@ p {
 
 .text--center {
   text-align: center;
+}
+.text--right {
+  text-align: right;
+}
+.text--left {
+  text-align: left;
 }
 .text--white {
   color: #fff;
@@ -222,6 +237,9 @@ p {
 }
 .text--grey--b {
   color: #4c4c4c;
+}
+.text--grey--c {
+  color: #aaaaaa;
 }
 .text--muli {
   font-family: "Muli", sans-serif;
@@ -255,6 +273,9 @@ p {
 }
 .mb--x4 {
   margin-bottom: 40px;
+}
+.mb--x7 {
+  margin-bottom: 70px;
 }
 .m--none {
   margin: 0px;

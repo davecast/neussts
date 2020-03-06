@@ -19,14 +19,6 @@ export default {
       type: Boolean,
       default: false
     },
-    pdTop: {
-      type: Boolean,
-      default: true
-    },
-    pdBottom: {
-      type: Boolean,
-      default: true
-    },
     pd: {
       type: String,
       default: "70px 0px"
@@ -49,8 +41,7 @@ export default {
         backgroundAttachment: this.attached ? "fixed" : "initial",
         backgroundPosition: this.backgroundPosition,
         backgroundSize: this.backgroundSize,
-        paddingTop: this.pdTop ? "70px" : "0px",
-        paddingBottom: this.pdBottom ? "70px" : "0px"
+        padding: this.pd
       }
     };
   }

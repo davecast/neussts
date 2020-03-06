@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <DcSection class="back--black">
+    <DcSection class="back--black" pd="55px 0px">
       <div class="container">
         <section class="grid grid__2--2--1 grid__gap--35">
           <div class="grid__item">
@@ -40,7 +40,7 @@
         </section>
       </div>
     </DcSection>
-    <DcSection :pdTop="false" :pdBottom="false" class="back--grey--b">
+    <DcSection pd="0px" class="back--grey--b">
       <div class="container">
         <div class="footer__bottom">
           <p>

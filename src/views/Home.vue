@@ -79,12 +79,7 @@
         </NeButton>
       </div>
     </DcSection>
-    <DcSection
-      backgroundImage="exp_back.png"
-      attached
-      :pdTop="false"
-      :pdBottom="false"
-    >
+    <DcSection backgroundImage="exp_back.png" attached pd="0px">
       <div class="container container__full">
         <div class="grid grid__1--1">
           <div class="grid__item--pd pd__left--col">
