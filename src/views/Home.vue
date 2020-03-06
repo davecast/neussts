@@ -79,9 +79,21 @@
         </NeButton>
       </div>
     </DcSection>
-    <DcSection backgroundImage="exp_back.png" attached>
-      <div class="container">
-        <Title title="contact us" color="2D2D2D" position="left" />
+    <DcSection
+      backgroundImage="exp_back.png"
+      attached
+      :pdTop="false"
+      :pdBottom="false"
+    >
+      <div class="container container__full">
+        <div class="grid grid__1--1">
+          <div class="grid__item--pd pd__left--col">
+            <Title title="contact us" color="2D2D2D" position="left" />
+          </div>
+          <div
+            class="back--yellow grid__item--pd contact__section--cover pd__right--col"
+          ></div>
+        </div>
       </div>
     </DcSection>
   </div>
@@ -119,5 +131,11 @@ export default {
 .feature__text {
   font-size: 18px;
   line-height: 24px;
+}
+.contact__section--cover {
+  background-image: url("~@/assets/contact__back.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 </style>

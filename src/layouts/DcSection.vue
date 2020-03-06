@@ -15,6 +15,18 @@ export default {
       type: Boolean,
       default: false
     },
+    full: {
+      type: Boolean,
+      default: false
+    },
+    pdTop: {
+      type: Boolean,
+      default: true
+    },
+    pdBottom: {
+      type: Boolean,
+      default: true
+    },
     backgroundPosition: {
       type: String,
       default: "center center"
@@ -32,7 +44,9 @@ export default {
           : "",
         backgroundAttachment: this.attached ? "fixed" : "initial",
         backgroundPosition: this.backgroundPosition,
-        backgroundSize: this.backgroundSize
+        backgroundSize: this.backgroundSize,
+        paddingTop: this.pdTop ? "70px" : "0px",
+        paddingBottom: this.pdBottom ? "70px" : "0px"
       }
     };
   }
@@ -40,9 +54,6 @@ export default {
 </script>
 
 <style scoped>
-.section {
-  padding: 70px 0px;
-}
 .section--background {
   background-size: cover;
 }

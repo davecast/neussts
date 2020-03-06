@@ -70,7 +70,6 @@ export default {
 .title__first {
   font-size: 28px;
   line-height: 22px;
-  font-family: "Muli", sans-serif;
   text-transform: uppercase;
 }
 </style>

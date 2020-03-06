@@ -125,6 +125,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+  font-family: "Muli", sans-serif;
 }
 
 p {
@@ -137,9 +138,18 @@ p {
   max-width: 1200px;
   margin: 0 auto;
 }
+.container__full {
+  max-width: 100%;
+}
 .content--768--center {
   max-width: 768px;
   margin: 0 auto;
+}
+.pd__left--col {
+  padding-left: calc(100% - calc(1200px / 2));
+}
+.pd__right--col {
+  padding-right: calc(100% - calc(1200px / 2));
 }
 
 .back--white {
@@ -155,12 +165,21 @@ p {
 .grid {
   display: grid;
 }
+.grid__item--pd {
+  padding: 70px 0px;
+}
 .grid--4--12 {
   max-width: calc(100% - 33.33%);
   margin: 0 auto;
 }
+.grid__1--1 {
+  grid-template: 1fr / 1fr 1fr;
+}
 .grid__3 {
   grid-template: 1fr / 1fr 1fr 1fr;
+}
+.grid__2--2--1 {
+  grid-template: 1fr / 2fr 2fr 1fr;
 }
 .grid__gap--35 {
   grid-gap: 35px;

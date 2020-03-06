@@ -1,10 +1,5 @@
 <template>
-  <router-link
-    class="btn"
-    :class="[colorType]"
-    :to="routeLink"
-    v-slot="{ href, route, navigate }"
-  >
+  <router-link class="btn" :to="routeLink" v-slot="{ href, route, navigate }">
     <a :href="href" @click="navigate" :style="styleButton">
       <span>
         <slot></slot>

@@ -37,7 +37,7 @@
               <router-link to="/experience">Experience</router-link>
             </li>
             <li class="header__menu--list">
-              <router-link to="/partners">Partners</router-link>
+              <router-link to="/products">Products &amp; Brands</router-link>
             </li>
             <li class="header__menu--list">
               <router-link to="/contact">Contact</router-link>

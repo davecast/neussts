@@ -1,11 +1,11 @@
 <template>
   <ul>
-    <li>
+    <li :style="styleLi">
       <a :href="facebook">
         <i class="wz-icon wz-facebook"></i>
       </a>
     </li>
-    <li>
+    <li :style="styleLi">
       <a :href="twitter">
         <i class="wz-icon wz-twitter-brands"></i>
       </a>
@@ -16,9 +16,25 @@
 <script>
 export default {
   name: "Social",
-  props: ["facebook", "twitter"],
+  props: {
+    facebook: {
+      type: String
+    },
+    twitter: {
+      type: String
+    },
+    alignItems: {
+      type: String,
+      default: "left"
+    }
+  },
   data() {
-    return {};
+    return {
+      styleLi: {
+        margin:
+          this.alignItems === "right" ? "0px 10px 0px 0px" : "0px 0px 0px 10px"
+      }
+    };
   }
 };
 </script>
@@ -34,6 +50,7 @@ a {
   color: #fff;
   font-size: 16px;
   line-height: 16px;
+  cursor: pointer;
   transition: all 0.3s ease-out;
 }
 a:hover {
