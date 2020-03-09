@@ -80,7 +80,12 @@
               <img src="@/assets/about/customer-service.jpg" />
             </figure>
             <div class="grid__values--content">
-              <Title title="Customer Focus" color="ffffff" position="left" />
+              <Title
+                title="Customer Focus"
+                color="ffffff"
+                position="left"
+                textTransform="Capitalize"
+              />
               <p class="text--small text--grey--d">
                 We focus relentlessly on the customer. We provide flexible,
                 practical and value added solutions. We deliver results by
@@ -93,7 +98,12 @@
               <img src="@/assets/about/innovation.jpg" />
             </figure>
             <div class="grid__values--content">
-              <Title title="Innovation" color="ffffff" position="left" />
+              <Title
+                title="Innovation"
+                color="ffffff"
+                position="left"
+                textTransform="Capitalize"
+              />
               <p class="text--small text--grey--d">
                 We approach our business with creativity, fresh ideas, lateral
                 thinking and a commitment to do things in a new way.
@@ -105,7 +115,12 @@
               <img src="@/assets/about/integrity.jpg" />
             </figure>
             <div class="grid__values--content">
-              <Title title="Integrity" color="ffffff" position="left" />
+              <Title
+                title="Integrity"
+                color="ffffff"
+                position="left"
+                textTransform="Capitalize"
+              />
               <p class="text--small text--grey--d">
                 We are dependable and responsible people committed to being
                 open, transparent, honest and direct in all of our activities.
@@ -117,7 +132,12 @@
               <img src="@/assets/about/excellence.jpg" />
             </figure>
             <div class="grid__values--content">
-              <Title title="Excellence" color="ffffff" position="left" />
+              <Title
+                title="Excellence"
+                color="ffffff"
+                position="left"
+                textTransform="Capitalize"
+              />
               <p class="text--small text--grey--d">
                 We are dedicated to continuous improvement which is reflected in
                 our leadership in best practice implementation.
@@ -129,7 +149,12 @@
               <img src="@/assets/about/people.jpg" />
             </figure>
             <div class="grid__values--content">
-              <Title title="People" color="ffffff" position="left" />
+              <Title
+                title="People"
+                color="ffffff"
+                position="left"
+                textTransform="Capitalize"
+              />
               <p class="text--small text--grey--d">
                 We create value, are empowered to make a difference and are
                 responsible and accountable for our actions. We succeed through
@@ -141,6 +166,7 @@
         </div>
       </div>
     </DcSection>
+    <CallContact />
   </div>
 </template>
 
@@ -149,6 +175,7 @@ import Banner from "@/components/Banner.vue";
 import Title from "@/components/NeTitle.vue";
 import ImageContent from "@/components/ImageContent.vue";
 import Feature from "@/components/Feature.vue";
+import CallContact from "@/components/CallContact.vue";
 
 import DcSection from "@/layouts/DcSection.vue";
 
@@ -159,13 +186,15 @@ export default {
     DcSection,
     Title,
     ImageContent,
-    Feature
+    Feature,
+    CallContact
   }
 };
 </script>
 
 <style scoped>
 .grid__values {
+  padding-top: 10px;
   display: grid;
   grid-gap: 35px;
   grid-template-columns: repeat(6, 1fr);
