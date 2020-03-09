@@ -1,6 +1,6 @@
 <template>
   <header class="header" :class="classObject">
-    <div class="header__top">
+    <div class="header__top" :class="{ header__top__fixed: isFixed }">
       <div class="container">
         <div class="header__content">
           <Flags />
@@ -11,13 +11,13 @@
         </div>
       </div>
     </div>
-    <div class="header__bottom">
+    <div class="header__bottom" :class="{ header__bottom__fixed: isFixed }">
       <div class="container">
         <div class="header__content">
           <router-link to="/" class="header__logo">
             <figure>
               <img
-                v-if="this.$route.path !== '/'"
+                v-if="this.$route.path !== '/' && !isFixed"
                 src="@/assets/logo-white.png"
               />
               <img v-else src="@/assets/logo.png" />
@@ -60,7 +60,18 @@ export default {
     Flags
   },
   data() {
-    return {};
+    return {
+      isFixed: false
+    };
+  },
+  methods: {
+    handleScroll() {
+      if (window.pageYOffset >= 135) {
+        this.isFixed = true;
+      } else {
+        this.isFixed = false;
+      }
+    }
   },
   computed: {
     classObject: function() {
@@ -68,6 +79,9 @@ export default {
         header__transparent: this.$route.path !== "/"
       };
     }
+  },
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
   }
 };
 </script>
@@ -89,11 +103,27 @@ export default {
   display: flex;
   align-items: center;
 }
+.header__top__fixed {
+  margin-bottom: 100px;
+}
 .header__bottom {
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background 0.3s ease-in-out;
+}
+.header__bottom__fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  height: 70px;
+  z-index: 9;
+}
+.header__transparent .header__bottom__fixed {
+  transition: all 0.3s ease-in-out;
 }
 .header__content {
   display: flex;
@@ -106,6 +136,9 @@ export default {
   overflow: hidden;
   display: block;
   width: 180px;
+}
+.header__bottom__fixed .header__logo {
+  width: 130px;
 }
 .header__logo figure {
   width: 100%;
@@ -137,6 +170,9 @@ export default {
 }
 .header__transparent .header__menu a {
   color: #fff;
+}
+.header__transparent .header__bottom__fixed .header__menu a {
+  color: #727272;
 }
 .header__menu a::before {
   position: absolute;
