@@ -166,7 +166,18 @@
         </div>
       </div>
     </DcSection>
-    <CallContact />
+    <CallAction backgroundImage="call__contact.png" backgroundColor="#efdc30">
+      <h2 class="title__section text--white mb--x3">
+        HAVE A QUESTIONS OR HAVE A SPECIAL REQUEST?
+      </h2>
+      <p class="text--normal text--white text__content--normal  mb--x3">
+        We are ready to help you. In fact, we promise to get back to you in less
+        than 12 hours.
+      </p>
+      <NeButton routeLink="/contact" align="left">
+        contact us for a quote
+      </NeButton>
+    </CallAction>
   </div>
 </template>
 
@@ -175,7 +186,8 @@ import Banner from "@/components/Banner.vue";
 import Title from "@/components/NeTitle.vue";
 import ImageContent from "@/components/ImageContent.vue";
 import Feature from "@/components/Feature.vue";
-import CallContact from "@/components/CallContact.vue";
+import CallAction from "@/components/CallAction.vue";
+import NeButton from "@/components/Button.vue";
 
 import DcSection from "@/layouts/DcSection.vue";
 
@@ -187,7 +199,8 @@ export default {
     Title,
     ImageContent,
     Feature,
-    CallContact
+    CallAction,
+    NeButton
   }
 };
 </script>

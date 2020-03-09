@@ -217,7 +217,7 @@ p {
   font-size: 26px;
   line-height: 32px;
   text-transform: uppercase;
-  max-width: 400px;
+  max-width: 470px;
 }
 
 .text--center {
@@ -273,6 +273,9 @@ p {
 }
 .text__content--small {
   max-width: 300px;
+}
+.text__content--normal {
+  max-width: 450px;
 }
 
 .mt--x1 {
