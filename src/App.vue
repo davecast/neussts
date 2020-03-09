@@ -139,7 +139,7 @@ p {
   background-color: #2d2d2d;
 }
 .back--yellow {
-  background-color: #d6c600;
+  background-color: #efdc30;
 }
 .back--grey--a {
   background-color: #999999;
@@ -275,6 +275,15 @@ p {
   max-width: 300px;
 }
 
+.mt--x1 {
+  margin-top: 10px;
+}
+.mt--x2 {
+  margin-top: 20px;
+}
+.mt--x3 {
+  margin-top: 30px;
+}
 .mb--x1 {
   margin-bottom: 10px;
 }

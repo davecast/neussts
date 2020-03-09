@@ -25,6 +25,10 @@ export default {
     color: {
       type: String,
       default: "222222"
+    },
+    textTransform: {
+      type: String,
+      default: "uppercase"
     }
   },
   data() {
@@ -34,7 +38,8 @@ export default {
         title__right: this.position === "right"
       },
       styleTitle: {
-        color: `#${this.color}`
+        color: `#${this.color}`,
+        textTransform: this.textTransform
       },
       styleHeader: {
         textAlign: this.position
