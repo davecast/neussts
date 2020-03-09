@@ -29,6 +29,10 @@ export default {
     textTransform: {
       type: String,
       default: "uppercase"
+    },
+    twoLines: {
+      type: Boolean,
+      default: false
     }
   },
   data() {
@@ -39,7 +43,8 @@ export default {
       },
       styleTitle: {
         color: `#${this.color}`,
-        textTransform: this.textTransform
+        textTransform: this.textTransform,
+        lineHeight: this.twoLines ? "32px" : ""
       },
       styleHeader: {
         textAlign: this.position

@@ -23,6 +23,9 @@ export default {
   name: "Products",
   components: {
     Banner
+  },
+  mounted() {
+    window.scrollTo(0, 0);
   }
 };
 </script>

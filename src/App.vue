@@ -49,6 +49,9 @@ i.wz-icon {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.wz-check-double:before {
+  content: "\e910";
+}
 .wz-twitter-brands:before {
   content: "\e90f";
 }
@@ -236,7 +239,7 @@ p {
   color: #2d2d2d;
 }
 .text--yellow {
-  color: #d6c600;
+  color: #efdc30;
 }
 .text--grey--a {
   color: #999999;

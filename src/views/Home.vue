@@ -122,6 +122,9 @@ export default {
     DcSection,
     Title,
     Feature
+  },
+  mounted() {
+    window.scrollTo(0, 0);
   }
 };
 </script>

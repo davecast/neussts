@@ -144,6 +144,9 @@ export default {
     DcSection,
     CallAction,
     NeButton
+  },
+  mounted() {
+    window.scrollTo(0, 0);
   }
 };
 </script>

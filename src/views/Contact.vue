@@ -21,6 +21,9 @@ export default {
   name: "Experience",
   components: {
     Banner
+  },
+  mounted() {
+    window.scrollTo(0, 0);
   }
 };
 </script>
