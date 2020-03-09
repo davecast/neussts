@@ -180,6 +180,12 @@ p {
 .grid__2--2--1 {
   grid-template: 1fr / 2fr 2fr 1fr;
 }
+.grid__1--3 {
+  grid-template: 1fr / 1fr 3fr;
+}
+.grid__col--4 {
+  grid-template: 1fr / repeat(4, 1fr);
+}
 .grid__col--6 {
   grid-template: 1fr / repeat(6, 1fr);
 }

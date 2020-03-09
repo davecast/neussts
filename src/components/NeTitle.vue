@@ -83,4 +83,12 @@ export default {
   text-transform: uppercase;
   font-weight: 900;
 }
+.title__second {
+  color: #aaaaaa;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
 </style>

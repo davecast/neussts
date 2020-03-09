@@ -13,16 +13,130 @@
         gas industry.
       </p>
     </Banner>
+    <DcSection class="back--grey--d">
+      <div class="container">
+        <Title
+          title="products"
+          subtitle="portfolio of"
+          color="2d2d2d"
+          position="center"
+        />
+        <div class="grid grid__col--4 grid__gap--35">
+          <Product
+            image="products/pro__1.jpg"
+            title="Here can put the name for product"
+          >
+            We focus relentlessly on the customer. We provide flexible,
+            practical and value added solutions. We deliver results by
+            constantly taking the initiative.
+          </Product>
+          <Product
+            image="products/pro__1.jpg"
+            title="Here can put the name for product"
+          >
+            We focus relentlessly on the customer. We provide flexible,
+            practical and value added solutions. We deliver results by
+            constantly taking the initiative.
+          </Product>
+          <Product
+            image="products/pro__1.jpg"
+            title="Here can put the name for product"
+          >
+            We focus relentlessly on the customer. We provide flexible,
+            practical and value added solutions. We deliver results by
+            constantly taking the initiative.
+          </Product>
+          <Product
+            image="products/pro__1.jpg"
+            title="Here can put the name for product"
+          >
+            We focus relentlessly on the customer. We provide flexible,
+            practical and value added solutions. We deliver results by
+            constantly taking the initiative.
+          </Product>
+          <Product
+            image="products/pro__1.jpg"
+            title="Here can put the name for product"
+          >
+            We focus relentlessly on the customer. We provide flexible,
+            practical and value added solutions. We deliver results by
+            constantly taking the initiative.
+          </Product>
+          <Product
+            image="products/pro__1.jpg"
+            title="Here can put the name for product"
+          >
+            We focus relentlessly on the customer. We provide flexible,
+            practical and value added solutions. We deliver results by
+            constantly taking the initiative.
+          </Product>
+          <Product
+            image="products/pro__1.jpg"
+            title="Here can put the name for product"
+          >
+            We focus relentlessly on the customer. We provide flexible,
+            practical and value added solutions. We deliver results by
+            constantly taking the initiative.
+          </Product>
+          <Product
+            image="products/pro__1.jpg"
+            title="Here can put the name for product"
+          >
+            We focus relentlessly on the customer. We provide flexible,
+            practical and value added solutions. We deliver results by
+            constantly taking the initiative.
+          </Product>
+        </div>
+      </div>
+    </DcSection>
+    <DcSection class="back--grey--c">
+      <div class="container">
+        <div class="grid grid__gap--35 grid__1--3 ">
+          <div class="grid__item">
+            <Title
+              title="BRANDS"
+              subtitle="OUR WORK WITH BEST"
+              color="2d2d2d"
+              position="left"
+            />
+          </div>
+          <div class="grid__item"></div>
+        </div>
+      </div>
+    </DcSection>
+    <CallAction backgroundImage="call__contact.png" backgroundColor="#efdc30">
+      <h2 class="title__section text--white mb--x3">
+        HAVE A QUESTIONS OR HAVE A SPECIAL REQUEST?
+      </h2>
+      <p class="text--normal text--white text__content--normal  mb--x3">
+        We are ready to help you. In fact, we promise to get back to you in less
+        than 12 hours.
+      </p>
+      <NeButton routeLink="/contact" align="left">
+        contact us for a quote
+      </NeButton>
+    </CallAction>
   </div>
 </template>
 
 <script>
 import Banner from "@/components/Banner.vue";
+import Title from "@/components/NeTitle.vue";
+import CallAction from "@/components/CallAction.vue";
+import NeButton from "@/components/Button.vue";
+import Product from "@/components/Product.vue";
+
+import DcSection from "@/layouts/DcSection.vue";
 
 export default {
   name: "Products",
   components: {
-    Banner
+    Banner,
+    DcSection,
+    Title,
+    CallAction,
+    NeButton,
+    Product
   },
   mounted() {
     window.scrollTo(0, 0);
