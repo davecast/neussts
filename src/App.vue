@@ -144,6 +144,9 @@ p {
 .back--grey--a {
   background-color: #999999;
 }
+.back--grey--c {
+  background-color: #f2f2f2;
+}
 .back--grey--b {
   background-color: #4c4c4c;
 }
@@ -173,6 +176,9 @@ p {
 }
 .grid__2--2--1 {
   grid-template: 1fr / 2fr 2fr 1fr;
+}
+.grid__col--6 {
+  grid-template: 1fr / repeat(6, 1fr);
 }
 .grid__gap--35 {
   grid-gap: 35px;
@@ -241,6 +247,9 @@ p {
 .text--grey--c {
   color: #aaaaaa;
 }
+.text--grey--d {
+  color: #eaeaea;
+}
 .text--muli {
   font-family: "Muli", sans-serif;
 }
@@ -249,6 +258,10 @@ p {
 }
 .text--extrabold {
   font-weight: 900;
+}
+.text--small {
+  font-size: 14px;
+  line-height: 26px;
 }
 .text--normal {
   font-size: 18px;

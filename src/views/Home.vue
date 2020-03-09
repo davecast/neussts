@@ -14,30 +14,11 @@
       <div class="container">
         <Title title="experiences" color="2D2D2D" />
         <div class="grid grid--4--12 grid__3 grid__gap--35 mb--x3">
-          <div class="feature">
-            <figure class="feature__img">
-              <img src="@/assets/exp_1.png" />
-            </figure>
-            <h3 class="feature__text text--center text--yellow">
-              CONSULTING <br />MANAGER
-            </h3>
-          </div>
-          <div class="feature">
-            <figure class="feature__img">
-              <img src="@/assets/exp_2.png" />
-            </figure>
-            <h3 class="feature__text text--center text--yellow">
-              PROCUREMENT <br />SERVICES
-            </h3>
-          </div>
-          <div class="feature">
-            <figure class="feature__img">
-              <img src="@/assets/exp_3.png" />
-            </figure>
-            <h3 class="feature__text text--center text--yellow">
-              REPRESENTATIONS &amp; <br />PROMOTIONS
-            </h3>
-          </div>
+          <Feature image="exp_1.png"> CONSULTING <br />MANAGER </Feature>
+          <Feature image="exp_2.png"> PROCUREMENT <br />SERVICES </Feature>
+          <Feature image="exp_3.png">
+            REPRESENTATIONS &amp; <br />PROMOTIONS
+          </Feature>
         </div>
         <NeButton routeLink="/experience" color="2d2d2d" background="EFDC30">
           what we do for
@@ -129,6 +110,7 @@
 import Banner from "@/components/Banner.vue";
 import NeButton from "@/components/Button.vue";
 import Title from "@/components/NeTitle.vue";
+import Feature from "@/components/Feature.vue";
 
 import DcSection from "@/layouts/DcSection.vue";
 
@@ -138,26 +120,13 @@ export default {
     Banner,
     NeButton,
     DcSection,
-    Title
+    Title,
+    Feature
   }
 };
 </script>
 
 <style scoped>
-.feature {
-  text-align: center;
-}
-.feature__img {
-  max-width: 200px;
-  margin: 0 auto 25px;
-}
-.feature__img img {
-  max-width: 100%;
-}
-.feature__text {
-  font-size: 18px;
-  line-height: 24px;
-}
 .contact--cover {
   background-image: url("~@/assets/contact__back.jpg");
 }

@@ -81,6 +81,7 @@ export default {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  z-index: 9;
 }
 .header__top {
   height: 35px;
