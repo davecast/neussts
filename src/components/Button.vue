@@ -1,11 +1,19 @@
 <template>
-  <router-link class="btn" :to="routeLink" v-slot="{ href, route, navigate }">
+  <router-link
+    v-if="!onClickable"
+    class="btn"
+    :to="routeLink"
+    v-slot="{ href, route, navigate }"
+  >
     <a :href="href" @click="navigate" :style="styleButton">
       <span>
         <slot></slot>
       </span>
     </a>
   </router-link>
+  <button @click="buttonClick" v-else class="btn" :style="styleButton">
+    <slot></slot>
+  </button>
 </template>
 
 <script>
@@ -27,6 +35,10 @@ export default {
     align: {
       type: String,
       default: "center"
+    },
+    onClickable: {
+      type: Boolean,
+      default: false
     }
   },
   data() {
@@ -38,12 +50,22 @@ export default {
         marginRight: this.align === "right" ? "0" : "auto"
       }
     };
+  },
+  methods: {
+    buttonClick() {
+      this.$emit("custom-click");
+    }
   }
 };
 </script>
 
 <style scoped>
 .btn {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Muli", sans-serif;
+  appearance: none;
+  border: none;
   position: relative;
   overflow: hidden;
   display: block;
@@ -52,11 +74,17 @@ export default {
   padding: 10px 35px;
   border-radius: 5px;
   text-transform: uppercase;
+  cursor: pointer;
   transition: all 0.25s ease-in;
 }
 .btn:hover {
   background: #2d2d2d !important;
   color: #fff !important;
   transform: translateY(-1.5px);
+}
+.btn:active,
+.btn:focus {
+  outline: none;
+  box-shadow: none;
 }
 </style>

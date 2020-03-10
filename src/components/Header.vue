@@ -121,6 +121,7 @@ export default {
   background: #fff;
   height: 70px;
   z-index: 9;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
 }
 .header__transparent .header__bottom__fixed {
   transition: all 0.3s ease-in-out;
