@@ -49,6 +49,9 @@ i.wz-icon {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.wz-id-card:before {
+  content: "\e911";
+}
 .wz-check-double:before {
   content: "\e910";
 }
