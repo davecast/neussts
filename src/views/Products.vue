@@ -92,15 +92,29 @@
     <DcSection class="back--grey--c">
       <div class="container">
         <div class="grid grid__gap--35 grid__1--3 ">
-          <div class="grid__item">
+          <div class="grid__item grid__item--center-v">
             <Title
               title="BRANDS"
               subtitle="OUR WORK WITH BEST"
               color="2d2d2d"
               position="left"
+              margin="0px"
             />
           </div>
-          <div class="grid__item"></div>
+          <div class="grid__item">
+            <div class="grid grid grid__col--5 grid__gap--35">
+              <ImageContent source="products/brand.png" />
+              <ImageContent source="products/brand.png" />
+              <ImageContent source="products/brand.png" />
+              <ImageContent source="products/brand.png" />
+              <ImageContent source="products/brand.png" />
+              <ImageContent source="products/brand.png" />
+              <ImageContent source="products/brand.png" />
+              <ImageContent source="products/brand.png" />
+              <ImageContent source="products/brand.png" />
+              <ImageContent source="products/brand.png" />
+            </div>
+          </div>
         </div>
       </div>
     </DcSection>
@@ -125,6 +139,7 @@ import Title from "@/components/NeTitle.vue";
 import CallAction from "@/components/CallAction.vue";
 import NeButton from "@/components/Button.vue";
 import Product from "@/components/Product.vue";
+import ImageContent from "@/components/ImageContent.vue";
 
 import DcSection from "@/layouts/DcSection.vue";
 
@@ -136,7 +151,8 @@ export default {
     Title,
     CallAction,
     NeButton,
-    Product
+    Product,
+    ImageContent
   },
   mounted() {
     window.scrollTo(0, 0);

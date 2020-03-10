@@ -186,6 +186,9 @@ p {
 .grid__col--4 {
   grid-template: 1fr / repeat(4, 1fr);
 }
+.grid__col--5 {
+  grid-template: 1fr / repeat(5, 1fr);
+}
 .grid__col--6 {
   grid-template: 1fr / repeat(6, 1fr);
 }

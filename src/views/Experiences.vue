@@ -17,9 +17,7 @@
           <div class="grid__item grid__item--center-v">
             <Title title="CONSULTING MANAGER" color="2d2d2d" position="right" />
             <ImageContent source="experience/exp__1.jpg" class="mb--x3" />
-            <p
-              class="solutions__paragraph solutions__paragraph--separator text--grey--c text--right"
-            >
+            <p class="text--exp text--exp--separator text--grey--c text--right">
               We apply the best practice to help organizations to improve their
               performance, operating primarily through the analysis of existing
               problems and the development of plans for improvement.
@@ -252,9 +250,7 @@
               position="left"
             />
             <ImageContent source="experience/exp__2.jpg" class="mb--x3" />
-            <p
-              class="solutions__paragraph solutions__paragraph--separator text--grey--c"
-            >
+            <p class="text--exp text--exp--separator text--grey--c">
               We support the procurement department by revealing the information
               they need to improve their purchasing decisions by combining the
               different aspects of the procurement process into one seamless
@@ -274,16 +270,14 @@
             />
             <ImageContent source="experience/exp__3.jpg" class="mb--x3" />
             <p
-              class="solutions__paragraph solutions__paragraph--separator text--grey--c text--right mb--x1"
+              class="text--exp text--exp--separator text--grey--c text--right mb--x1"
             >
               The O&amp;M business is dedicated to operating and maintaining
               customer facilities related to energy transformation. The O&amp;M
               team will provide the best level of service and operations to
               preserve and maximize the value of the assets.
             </p>
-            <p
-              class="solutions__paragraph solutions__paragraph--separator text--grey--c text--right"
-            >
+            <p class="text--exp text--exp--separator text--grey--c text--right">
               O&amp;M services are designed to maximize the lifetime value of
               your assets. Neuss proactively monitors and manages your plants
               minimizing downtime and increasing site availability, resulting in
@@ -427,6 +421,13 @@ export default {
 </script>
 
 <style scoped>
+.text--exp {
+  font-size: 16px;
+  line-height: 29px;
+}
+.text--exp--separator {
+  margin-bottom: 15px;
+}
 .experience__header {
   display: grid;
   grid-template: 1fr / 65px 1fr;

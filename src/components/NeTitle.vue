@@ -33,6 +33,9 @@ export default {
     twoLines: {
       type: Boolean,
       default: false
+    },
+    margin: {
+      type: String
     }
   },
   data() {
@@ -47,7 +50,8 @@ export default {
         lineHeight: this.twoLines ? "32px" : ""
       },
       styleHeader: {
-        textAlign: this.position
+        textAlign: this.position,
+        margin: !this.margin ? "0px 0px 35px" : this.margin
       }
     };
   }
