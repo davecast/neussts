@@ -34,7 +34,39 @@
             </p>
             <DcForm />
           </div>
-          <div class="contact__info">b</div>
+          <div class="contact__info">
+            <Title title="CONTACT INFORMATION" color="2d2d2d" position="left" />
+            <ul class="info">
+              <li>
+                <i class="wz-icon wz-envelope"></i>
+                info@neuss-ts.com
+              </li>
+            </ul>
+            <ContactWorld
+              name="canada"
+              flag="canada.png"
+              address="37 Estelle-MAuffette Notre Dame De L'Ile-Perrot (QC) J7V 9R8"
+              rif="883844774783"
+            />
+            <ContactWorld
+              name="peru"
+              flag="peru.png"
+              address="440 Los Castallos, San Isidro Lima - 25"
+              rif="883844774783"
+            />
+            <ContactWorld
+              name="colombia"
+              flag="colombia.png"
+              address="Calle 7B, Edif. Altos de Bella Suiza Bella Suiza - Bogota"
+              rif="883844774783"
+            />
+            <ContactWorld
+              name="venezuela"
+              flag="venezuela.png"
+              address="Centro Empresarial Colon, Piso 2 Lecherias"
+              rif="883844774783"
+            />
+          </div>
         </div>
       </div>
     </DcSection>
@@ -44,6 +76,8 @@
 <script>
 import Banner from "@/components/Banner.vue";
 import DcForm from "@/components/Form.vue";
+import Title from "@/components/NeTitle.vue";
+import ContactWorld from "@/components/ContactWorld.vue";
 
 import DcSection from "@/layouts/DcSection.vue";
 
@@ -52,7 +86,9 @@ export default {
   components: {
     Banner,
     DcSection,
-    DcForm
+    DcForm,
+    Title,
+    ContactWorld
   },
   data() {
     return {};
@@ -79,5 +115,20 @@ export default {
   line-height: 22px;
   text-transform: uppercase;
   font-weight: 900;
+}
+.info {
+  margin-bottom: 30px;
+}
+.info ul {
+}
+.info li {
+  color: #aaaaaa;
+  font-size: 16px;
+  line-height: 20px;
+  display: grid;
+  grid-template: 1fr / 25px 1fr;
+}
+.info i {
+  margin-top: 2px;
 }
 </style>

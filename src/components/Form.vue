@@ -294,7 +294,7 @@ export default {
   padding: 40px 30px;
 }
 .form__control {
-  margin-bottom: 12px;
+  margin-bottom: 25px;
   display: flex;
   flex-direction: column;
 }
