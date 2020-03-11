@@ -71,7 +71,7 @@ export default {
   display: block;
   margin: 0 auto;
   width: fit-content;
-  padding: 10px 35px;
+  padding: 12px 20px;
   border-radius: 5px;
   text-transform: uppercase;
   cursor: pointer;

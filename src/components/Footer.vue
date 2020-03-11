@@ -6,7 +6,7 @@
           <div class="grid__item">
             <router-link to="/" class="footer__logo">
               <figure class="footer__img">
-                <img src="@/assets/logo-white.png" alt="neuss ts" />
+                <img src="@/assets/logo.png" alt="neuss ts" />
               </figure>
             </router-link>
           </div>
