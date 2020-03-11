@@ -35,7 +35,12 @@
             <DcForm />
           </div>
           <div class="contact__info">
-            <Title title="CONTACT INFORMATION" color="2d2d2d" position="left" />
+            <Title
+              title="CONTACT INFORMATION"
+              color="2d2d2d"
+              position="left"
+              :twoLines="true"
+            />
             <ul class="info">
               <li>
                 <i class="wz-icon wz-envelope"></i>
@@ -112,7 +117,7 @@ export default {
 }
 .contact__form--title {
   font-size: 28px;
-  line-height: 22px;
+  line-height: 32px;
   text-transform: uppercase;
   font-weight: 900;
 }

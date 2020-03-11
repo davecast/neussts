@@ -14,11 +14,16 @@
     <DcSection class="back--grey--c">
       <div class="container">
         <div class="grid grid__1--1 grid--2--12 grid__gap--35 mb--x7">
-          <div class="grid__item">
+          <div class="grid__item grid__item--center-v">
             <ImageContent source="solutions/sol_1.jpg" />
           </div>
           <div class="grid__item grid__item--center-v content--rigth--pd">
-            <Title title="CONSULTING MANAGER" color="2d2d2d" position="left" />
+            <Title
+              title="CONSULTING MANAGER"
+              color="2d2d2d"
+              position="left"
+              :twoLines="true"
+            />
             <p
               class="solutions__paragraph solutions__paragraph--separator text--grey--c"
             >
@@ -67,11 +72,16 @@
     <DcSection class="back--grey--c">
       <div class="container">
         <div class="grid grid__1--1 grid--2--12 grid__gap--35 mb--x7">
-          <div class="grid__item">
+          <div class="grid__item grid__item--center-v">
             <ImageContent source="solutions/sol_2.jpg" />
           </div>
           <div class="grid__item grid__item--center-v content--rigth--pd">
-            <Title title="PROCUREMENT SERVICE" color="2d2d2d" position="left" />
+            <Title
+              title="PROCUREMENT SERVICE"
+              color="2d2d2d"
+              position="left"
+              :twoLines="true"
+            />
             <p
               class="solutions__paragraph solutions__paragraph--separator text--grey--c"
             >
@@ -94,7 +104,12 @@
         </div>
         <div class="grid grid__1--1 grid--2--12 grid__gap--35">
           <div class="grid__item grid__item--center-v content--left--pd">
-            <Title title="REPRESENTATIONS" color="2d2d2d" position="right" />
+            <Title
+              title="REPRESENTATIONS"
+              color="2d2d2d"
+              position="right"
+              :twoLines="true"
+            />
             <p
               class="solutions__paragraph solutions__paragraph--separator text--grey--c text--right"
             >
@@ -105,7 +120,7 @@
               long term relationships and growth for our suppliers.
             </p>
           </div>
-          <div class="grid__item">
+          <div class="grid__item grid__item--center-v">
             <ImageContent source="solutions/sol_3.jpg" />
           </div>
         </div>

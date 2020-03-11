@@ -61,7 +61,7 @@
       </div>
     </DcSection>
     <DcSection backgroundImage="exp_back.png" attached pd="0px">
-      <div class="container container__full">
+      <div class="container__full">
         <div class="grid grid__1--1">
           <div class="grid__item--pd pd__left--col">
             <Title title="contact us" color="2D2D2D" position="left" />

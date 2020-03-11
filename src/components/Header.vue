@@ -203,4 +203,7 @@ export default {
   background-color: transparent;
   border: none;
 }
+
+@media screen and (max-width: 1200px) {
+}
 </style>

@@ -1,6 +1,6 @@
 <template>
   <section class="callAction" :style="styleSection">
-    <div class="container container__full">
+    <div class="container__full">
       <div class="grid grid__1--1">
         <div class="grid__item--pd pd__left--col">
           <slot></slot>

@@ -211,7 +211,9 @@ p {
   margin: 0 auto;
 }
 .container__full {
+  width: 100%;
   max-width: 100%;
+  margin: 0 auto;
 }
 .content--768--center {
   max-width: 768px;
@@ -319,5 +321,17 @@ p {
 }
 .m--none {
   margin: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 980px;
+  }
+  .pd__left--col {
+    padding-left: calc(100% - calc(980px / 2));
+  }
+  .pd__right--col {
+    padding-right: calc(100% - calc(980px / 2));
+  }
 }
 </style>
