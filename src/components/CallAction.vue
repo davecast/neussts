@@ -73,4 +73,10 @@ export default {
     z-index: 1;
   }
 }
+
+@media screen and (max-width: 595px) {
+  .callAction--back--white {
+    background-position: center right;
+  }
+}
 </style>

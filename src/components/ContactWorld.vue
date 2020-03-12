@@ -86,4 +86,13 @@ li {
 i {
   margin-top: 2px;
 }
+@media screen and (max-width: 595px) {
+  li {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  i {
+    margin-top: 4px;
+  }
+}
 </style>

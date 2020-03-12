@@ -54,4 +54,14 @@ export default {
   line-height: 24px;
   color: #aaaaaa;
 }
+@media screen and (max-width: 595px) {
+  .image {
+    max-height: 150px;
+    overflow: hidden;
+  }
+  .image img {
+    object-fit: cover;
+    height: 100%;
+  }
+}
 </style>

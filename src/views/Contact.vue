@@ -99,7 +99,7 @@ export default {
     return {};
   },
   mounted() {
-    //window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }
 };
 </script>
@@ -138,15 +138,21 @@ export default {
 }
 
 @media screen and (max-width: 980px) {
-  .grid_5_4_[data-v-df212a54] {
+  .grid_5_4_ {
     grid-template-areas: "form form form form form form form . info info info info";
   }
 }
 @media screen and (max-width: 768px) {
-  .grid_5_4_[data-v-df212a54] {
+  .grid_5_4_ {
     grid-template-areas:
       "info info info info info info info info info info info info"
       "form form form form form form form form form form form form";
+  }
+}
+@media screen and (max-width: 595px) {
+  .contact__form--title {
+    font-size: 22px;
+    line-height: 22px;
   }
 }
 </style>

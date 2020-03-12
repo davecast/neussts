@@ -91,7 +91,14 @@ export default {
 }
 
 @media screen and (max-width: 595px) {
-  .banner__title--medium[data-v-a2fea148] {
+  .banner {
+    height: calc(100vh - 135px);
+  }
+  .banner__title--big {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .banner__title--medium {
     font-size: 22px;
     line-height: 22px;
     text-align: center;

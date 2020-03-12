@@ -319,4 +319,25 @@ export default {
     grid-template: 1fr / 1fr;
   }
 }
+
+@media screen and (max-width: 595px) {
+  .features.grid__col--6 {
+    grid-template: 1fr / repeat(12, 1fr);
+    grid-gap: 20px 10px;
+    grid-template-areas:
+      ". feature1 feature1 feature1 feature1 feature1 feature1 feature1 feature1 feature1 feature1 ."
+      ". feature2 feature2 feature2 feature2 feature2 feature2 feature2 feature2 feature2 feature2 ."
+      ". feature3 feature3 feature3 feature3 feature3 feature3 feature3 feature3 feature3 feature3 ."
+      ". feature4 feature4 feature4 feature4 feature4 feature4 feature4 feature4 feature4 feature4 ."
+      ". feature5 feature5 feature5 feature5 feature5 feature5 feature5 feature5 feature5 feature5 ."
+      ". feature6 feature6 feature6 feature6 feature6 feature6 feature6 feature6 feature6 feature6 .";
+  }
+  .grid__values--content {
+    padding: 10px 20px;
+  }
+  .text--small {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
 </style>

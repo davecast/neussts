@@ -15,7 +15,12 @@
       <div class="container">
         <div class="grid grid__1--1 grid--2--12 grid__gap--35 mb--x7">
           <div class="grid__item grid__item--center-v">
-            <Title title="CONSULTING MANAGER" color="2d2d2d" position="right" />
+            <Title
+              title="CONSULTING MANAGER"
+              color="2d2d2d"
+              position="right"
+              :twoLines="true"
+            />
             <ImageContent
               source="experience/exp__1.jpg"
               class="mb--x3 pdt--x1--tb"

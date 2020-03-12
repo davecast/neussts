@@ -89,7 +89,7 @@
         </div>
       </div>
     </DcSection>
-    <DcSection class="back--grey--c">
+    <DcSection class="back--grey--c brands">
       <div class="container">
         <div class="grid grid__gap--35 grid__1--3 ">
           <div class="grid__item grid__item--center-v">
@@ -102,7 +102,7 @@
             />
           </div>
           <div class="grid__item">
-            <div class="grid grid grid__col--5 grid__gap--35 brands">
+            <div class="grid grid grid__col--5 grid__gap--35 ">
               <ImageContent source="products/brand.png" />
               <ImageContent source="products/brand.png" />
               <ImageContent source="products/brand.png" />
@@ -180,6 +180,19 @@ export default {
   }
   .grid__1--3 {
     grid-template: 1fr / 1.5fr 3.5fr;
+  }
+}
+@media screen and (max-width: 595px) {
+  .grid__col--5[data-v-7177119e] {
+    grid-template: 1fr / repeat(2, 1fr);
+    grid-gap: 20px 10px;
+  }
+  .grid__col--4 {
+    grid-template: 1fr / repeat(1, 1fr);
+  }
+  .grid__1--3 {
+    grid-template: 1fr / 1fr;
+    grid-gap: 10px;
   }
 }
 </style>

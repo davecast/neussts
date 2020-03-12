@@ -104,4 +104,12 @@ export default {
     line-height: 18px;
   }
 }
+@media screen and (max-width: 595px) {
+  .brands .title {
+    text-align: center !important;
+  }
+  .brands .title::before {
+    right: 0px !important;
+  }
+}
 </style>

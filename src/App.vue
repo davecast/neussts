@@ -425,14 +425,24 @@ p {
   .title__section {
     max-width: 300px;
   }
-  .banner {
-    height: calc(100vh - 135px);
+  .pd__left--col {
+    max-width: 300px;
+  }
+  .section {
+    padding: 45px 0px !important;
+  }
+  .section.footer--bottom {
+    padding: 0px !important;
   }
 }
 @media screen and (max-width: 380px) {
   .container,
   .title__section {
     max-width: 280px;
+  }
+  .text--normal {
+    font-size: 14px;
+    line-height: 26px;
   }
 }
 </style>
