@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul class="social">
     <li :style="styleLi">
       <a :href="facebook">
         <i class="wz-icon wz-facebook"></i>
@@ -55,5 +55,15 @@ a {
 }
 a:hover {
   color: #efdc30;
+}
+
+@media screen and (max-width: 768px) {
+  footer .social li:last-child {
+    margin: 0 !important;
+  }
+  footer .social a {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 </style>

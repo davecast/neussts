@@ -41,4 +41,25 @@ export default {
     margin: 0 auto 20px;
   }
 }
+@media screen and (max-width: 768px) {
+  .feature {
+    display: grid;
+    grid-gap: 10px;
+    grid-template: 1fr / repeat(12, 1fr);
+    grid-template-areas: "image image image image text text text text text text text text";
+  }
+  .feature__img {
+    grid-area: image;
+    margin: 0;
+  }
+  .feature__text {
+    grid-area: text;
+    align-self: center;
+    justify-self: start;
+    text-align: left;
+  }
+  .feature__text br {
+    display: none;
+  }
+}
 </style>

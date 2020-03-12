@@ -142,4 +142,11 @@ export default {
     grid-template-areas: "form form form form form form form . info info info info";
   }
 }
+@media screen and (max-width: 768px) {
+  .grid_5_4_[data-v-df212a54] {
+    grid-template-areas:
+      "info info info info info info info info info info info info"
+      "form form form form form form form form form form form form";
+  }
+}
 </style>

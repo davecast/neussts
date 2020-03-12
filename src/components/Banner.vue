@@ -89,4 +89,23 @@ export default {
     margin-bottom: 25px;
   }
 }
+
+@media screen and (max-width: 595px) {
+  .banner__title--medium[data-v-a2fea148] {
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .banner__title--text {
+    max-width: 280px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .banner__title--separator::before {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
 </style>

@@ -323,6 +323,16 @@ p {
   margin: 0px;
 }
 
+.order--1 {
+  order: 1;
+}
+.order--2 {
+  order: 2;
+}
+.order--3 {
+  order: 3;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 980px;
@@ -357,10 +367,6 @@ p {
     font-size: 20px;
     line-height: 26px;
   }
-  .text--normal {
-    font-size: 16px;
-    line-height: 29px;
-  }
   .text--big {
     font-size: 22px;
     line-height: 35px;
@@ -385,10 +391,48 @@ p {
     max-width: 565px;
   }
   .pd__left--col {
-    padding-left: calc(100% - calc(565px / 2));
+    padding-left: 0;
+    margin: 0 auto;
+    max-width: 565px;
   }
   .pd__right--col {
-    padding-right: calc(100% - calc(565px / 2));
+    padding-right: 0;
+  }
+  .content--rigth--pd {
+    padding-left: 0px;
+  }
+  .content--left--pd {
+    padding-right: 0px;
+  }
+  .grid__item--pd {
+    padding: 35px 0px;
+  }
+
+  .title__section {
+    margin: 0 auto 15px;
+  }
+
+  .pdt--x1--tb {
+    padding-top: 10px;
+  }
+
+  .mb--x0--tb {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 595px) {
+  .container,
+  .title__section {
+    max-width: 300px;
+  }
+  .banner {
+    height: calc(100vh - 135px);
+  }
+}
+@media screen and (max-width: 380px) {
+  .container,
+  .title__section {
+    max-width: 280px;
   }
 }
 </style>

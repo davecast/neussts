@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <DcSection class="back--black" pd="55px 0px">
+    <DcSection class="back--black footer--top" pd="55px 0px">
       <div class="container">
         <section class="grid grid__2--2--1 grid__gap--35">
           <div class="grid__item">
@@ -40,7 +40,7 @@
         </section>
       </div>
     </DcSection>
-    <DcSection pd="0px" class="back--grey--b">
+    <DcSection pd="0px" class="back--grey--b footer--bottom">
       <div class="container">
         <div class="footer__bottom">
           <p>
@@ -141,6 +141,35 @@ export default {
 @media screen and (max-width: 980px) {
   .footer__img {
     max-width: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .footer--top {
+    padding: 35px 0px !important;
+  }
+  .grid__2--2--1 {
+    grid-gap: 20px;
+    grid-template: 1fr / 1fr;
+    text-align: center;
+  }
+  footer .grid__item:nth-child(2) {
+    order: 3;
+  }
+  footer .grid__item:nth-child(3) {
+    order: 2;
+  }
+  footer .social {
+    justify-content: center;
+  }
+  .footer__menu {
+    max-width: 380px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .footer__bottom p {
+    line-height: 24px;
+    margin: 0 auto;
+    max-width: 380px;
   }
 }
 </style>

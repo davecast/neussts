@@ -87,4 +87,12 @@ export default {
   outline: none;
   box-shadow: none;
 }
+
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 10px 20px;
+  }
+}
 </style>

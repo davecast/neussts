@@ -26,7 +26,9 @@
           </div>
         </div>
         <div class="grid grid__1--1 grid--2--12 grid__gap--35">
-          <div class="grid__item grid__item--center-v content--left--pd">
+          <div
+            class="grid__item grid__item--center-v content--left--pd order--2"
+          >
             <Title title="vision" color="2d2d2d" position="right" />
             <p class="text--normal text--grey--c text--right">
               To be recognized by our clients as an ally to solve their
@@ -260,6 +262,61 @@ export default {
       "item1 item1 item2 item2"
       "item3 item3 item4 item4"
       ". item5 item5 .";
+  }
+}
+@media screen and (max-width: 768px) {
+  .features.grid__col--6 {
+    grid-template: 1fr / repeat(12, 1fr);
+    grid-gap: 20px 10px;
+    grid-template-areas:
+      ". feature1 feature1 feature1 feature1 . . feature2 feature2 feature2 feature2 ."
+      ". feature3 feature3 feature3 feature3 . . feature4 feature4 feature4 feature4 ."
+      ". feature5 feature5 feature5 feature5 . . feature6 feature6 feature6 feature6 .";
+  }
+  .features .feature:nth-child(1) {
+    grid-area: feature1;
+  }
+  .features .feature:nth-child(2) {
+    grid-area: feature2;
+  }
+  .features .feature:nth-child(3) {
+    grid-area: feature3;
+  }
+  .features .feature:nth-child(4) {
+    grid-area: feature4;
+  }
+  .features .feature:nth-child(5) {
+    grid-area: feature5;
+  }
+  .features .feature:nth-child(6) {
+    grid-area: feature6;
+  }
+  .grid__values[data-v-039c5b43][data-v-039c5b43] {
+    padding-top: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "item1 item1 item1 item1"
+      "item2 item2 item2 item2"
+      "item3 item3 item3 item3"
+      "item4 item4 item4 item4"
+      "item5 item5 item5 item5";
+  }
+  .grid__values--image {
+    overflow: hidden;
+    max-height: 300px;
+  }
+  .grid__values--image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+  }
+  .text--small {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .grid__1--1 {
+    grid-template: 1fr / 1fr;
   }
 }
 </style>

@@ -102,7 +102,7 @@
             />
           </div>
           <div class="grid__item">
-            <div class="grid grid grid__col--5 grid__gap--35">
+            <div class="grid grid grid__col--5 grid__gap--35 brands">
               <ImageContent source="products/brand.png" />
               <ImageContent source="products/brand.png" />
               <ImageContent source="products/brand.png" />
@@ -168,6 +168,18 @@ export default {
   }
   .grid__col--5 {
     grid-template: 1fr / repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .grid__col--4 {
+    grid-template: 1fr / repeat(2, 1fr);
+  }
+  .grid__col--5 {
+    grid-template: 1fr / repeat(3, 1fr);
+    grid-gap: 20px 10px;
+  }
+  .grid__1--3 {
+    grid-template: 1fr / 1.5fr 3.5fr;
   }
 }
 </style>

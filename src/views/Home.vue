@@ -13,7 +13,9 @@
     <DcSection class="back--white" backgroundImage="exp_back.png" attached>
       <div class="container">
         <Title title="experiences" color="2D2D2D" />
-        <div class="grid grid--4--12 grid__3 grid__gap--35 mb--x3 mt--x3--lg">
+        <div
+          class="grid grid--4--12 grid__3 grid__gap--35 mb--x3 mt--x3--lg features"
+        >
           <Feature image="exp_1.png"> CONSULTING <br />MANAGER </Feature>
           <Feature image="exp_2.png"> PROCUREMENT <br />SERVICES </Feature>
           <Feature image="exp_3.png">
@@ -66,7 +68,7 @@
     <DcSection backgroundImage="exp_back.png" attached pd="0px">
       <div class="container__full">
         <div class="grid grid__1--1">
-          <div class="grid__item--pd pd__left--col">
+          <div class="grid__item--pd pd__left--col contact__block">
             <Title title="contact us" color="2D2D2D" position="left" />
             <ul class="contact__information">
               <li class="text--grey--a contact__information--size mb--x2">
@@ -160,6 +162,60 @@ export default {
 @media screen and (max-width: 980px) {
   .grid--4--12 {
     max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .grid__3 {
+    grid-template: 1fr / repeat(12, 1fr);
+    grid-gap: 20px 10px;
+    grid-template-areas:
+      "feature3 feature3 feature3 feature3 feature3 feature3 feature2 feature2 feature2 feature2 feature2 feature2"
+      ". . . feature1 feature1 feature1 feature1 feature1 feature1 . . .";
+  }
+  .features .feature:nth-child(1) {
+    grid-area: feature1;
+  }
+  .features .feature:nth-child(2) {
+    grid-area: feature2;
+  }
+  .features .feature:nth-child(3) {
+    grid-area: feature3;
+  }
+  .grid__1--1 {
+    grid-template: 1fr / 1fr;
+  }
+  .contact--cover {
+    text-align: center;
+  }
+  .contact--cover .text__content--small {
+    margin: 0 auto 15px;
+  }
+  .contact--cover .btn {
+    margin: 0 auto !important;
+  }
+  .contact__block .title {
+    text-align: center !important;
+  }
+  .contact__block .title.title__left::before {
+    right: 0 !important;
+  }
+  .contact__block .contact__information--size {
+    text-align: center;
+  }
+  .contact__block .contact__information--header {
+    display: inline-flex;
+  }
+  .contact__block .contact__information--text {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 595px) {
+  .grid__3 {
+    grid-template-areas:
+      "feature1 feature1 feature1 feature1 feature1 feature1 feature1 feature1 feature1 feature1 feature1 feature1"
+      "feature2 feature2 feature2 feature2 feature2 feature2 feature2 feature2 feature2 feature2 feature2 feature2"
+      "feature3 feature3 feature3 feature3 feature3 feature3 feature3 feature3 feature3 feature3 feature3 feature3";
   }
 }
 </style>

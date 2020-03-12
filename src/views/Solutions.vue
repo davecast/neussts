@@ -13,7 +13,7 @@
     </Banner>
     <DcSection class="back--grey--c">
       <div class="container">
-        <div class="grid grid__1--1 grid--2--12 grid__gap--35 mb--x7">
+        <div class="grid grid__1--1 grid--2--12 grid__gap--35 mb--x0--tb">
           <div class="grid__item grid__item--center-v">
             <ImageContent source="solutions/sol_1.jpg" />
           </div>
@@ -52,6 +52,7 @@
     <CallAction
       backgroundImage="solutions/callexperiences.jpg"
       backgroundColor="#ffffff"
+      class="callAction--back--white"
     >
       <h2 class="title__section text--black mb--x3">
         OUR TEAM HAS BEEN ENGINEERING FOR OVER 20 YEARS
@@ -103,7 +104,9 @@
           </div>
         </div>
         <div class="grid grid__1--1 grid--2--12 grid__gap--35">
-          <div class="grid__item grid__item--center-v content--left--pd">
+          <div
+            class="grid__item grid__item--center-v content--left--pd order--2"
+          >
             <Title
               title="REPRESENTATIONS"
               color="2d2d2d"
@@ -173,5 +176,15 @@ export default {
 }
 .solutions__paragraph--separator {
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .grid__1--1 {
+    grid-template: 1fr / 1fr;
+  }
+  .solutions__paragraph {
+    font-size: 18px;
+    line-height: 31px;
+  }
 }
 </style>

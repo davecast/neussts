@@ -16,7 +16,10 @@
         <div class="grid grid__1--1 grid--2--12 grid__gap--35 mb--x7">
           <div class="grid__item grid__item--center-v">
             <Title title="CONSULTING MANAGER" color="2d2d2d" position="right" />
-            <ImageContent source="experience/exp__1.jpg" class="mb--x3" />
+            <ImageContent
+              source="experience/exp__1.jpg"
+              class="mb--x3 pdt--x1--tb"
+            />
             <p class="text--exp text--exp--separator text--grey--c text--right">
               We apply the best practice to help organizations to improve their
               performance, operating primarily through the analysis of existing
@@ -82,7 +85,9 @@
           </div>
         </div>
         <div class="grid grid__1--1 grid--2--12 grid__gap--35 mb--x7">
-          <div class="grid__item grid__item--center-v content--left--pd">
+          <div
+            class="grid__item grid__item--center-v content--left--pd order--2"
+          >
             <div class="experience mb--x3">
               <header class="experience__header experience__header--right">
                 <h3 class="text--right">
@@ -242,14 +247,17 @@
               </section>
             </div>
           </div>
-          <div class="grid__item grid__item--center-v">
+          <div class="grid__item grid__item--center-v order--1">
             <Title
               :twoLines="true"
               title="SUPPLY AND PROCUREMENT SERVICES"
               color="2d2d2d"
               position="left"
             />
-            <ImageContent source="experience/exp__2.jpg" class="mb--x3" />
+            <ImageContent
+              source="experience/exp__2.jpg"
+              class="mb--x3 pdt--x1--tb"
+            />
             <p class="text--exp text--exp--separator text--grey--c">
               We support the procurement department by revealing the information
               they need to improve their purchasing decisions by combining the
@@ -268,7 +276,10 @@
               color="2d2d2d"
               position="right"
             />
-            <ImageContent source="experience/exp__3.jpg" class="mb--x3" />
+            <ImageContent
+              source="experience/exp__3.jpg"
+              class="mb--x3 pdt--x1--tb"
+            />
             <p
               class="text--exp text--exp--separator text--grey--c text--right mb--x1"
             >
@@ -489,5 +500,15 @@ export default {
 }
 .experience__list--item p {
   margin-top: -4px;
+}
+
+@media screen and (max-width: 768px) {
+  .grid__1--1 {
+    grid-template: 1fr / 1fr;
+  }
+  .text--exp {
+    font-size: 18px;
+    line-height: 31px;
+  }
 }
 </style>

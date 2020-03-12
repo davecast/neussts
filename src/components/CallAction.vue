@@ -41,4 +41,36 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 768px) {
+  .grid__1--1 {
+    grid-template: 1fr / 1fr;
+  }
+  .title__section,
+  .text__content--normal {
+    text-align: center;
+  }
+  .text__content--normal {
+    margin: 0 auto 20px;
+  }
+  .btn {
+    margin-left: auto !important;
+  }
+  .callAction--back--white {
+    position: relative;
+    display: flex;
+  }
+  .callAction--back--white::before {
+    position: absolute;
+    content: "";
+    background: rgba(255, 255, 255, 0.85);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+  }
+  .callAction--back--white > div {
+    z-index: 1;
+  }
+}
 </style>
