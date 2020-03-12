@@ -68,7 +68,7 @@ export default {
   border: none;
   position: relative;
   overflow: hidden;
-  display: block;
+  display: inline-block;
   margin: 0 auto;
   width: fit-content;
   padding: 12px 20px;

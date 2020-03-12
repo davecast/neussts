@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Banner type="big" img="banner.jpg">
+    <Banner type="big" img="banner.jpg" class="text--center">
       <h1
         class="banner__title--big text--center text--white text--muli text--extrabold mb--x4"
       >
@@ -11,7 +11,7 @@
       </NeButton>
     </Banner>
     <DcSection class="back--white" backgroundImage="exp_back.png" attached>
-      <div class="container">
+      <div class="container text--center">
         <Title title="experiences" color="2D2D2D" />
         <div
           class="grid grid--4--12 grid__3 grid__gap--35 mb--x3 mt--x3--lg features"
@@ -28,7 +28,7 @@
       </div>
     </DcSection>
     <DcSection
-      class="back--yellow section--lg"
+      class="back--yellow section--lg text--center"
       backgroundImage="about__back.png"
       backgroundPosition="bottom"
     >
@@ -48,7 +48,7 @@
       </div>
     </DcSection>
     <DcSection
-      class="back--black section--lg"
+      class="back--black section--lg text--center"
       backgroundImage="products__back.jpg"
     >
       <div class="container">
