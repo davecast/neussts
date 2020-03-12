@@ -91,7 +91,7 @@
         </div>
         <div class="grid grid__1--1 grid--2--12 grid__gap--35 mb--x7">
           <div
-            class="grid__item grid__item--center-v content--left--pd order--2"
+            class="grid__item grid__item--center-v content--left--pd order--2--tb"
           >
             <div class="experience mb--x3">
               <header class="experience__header experience__header--right">
@@ -252,7 +252,7 @@
               </section>
             </div>
           </div>
-          <div class="grid__item grid__item--center-v order--1">
+          <div class="grid__item grid__item--center-v order--1--tb">
             <Title
               :twoLines="true"
               title="SUPPLY AND PROCUREMENT SERVICES"

@@ -387,6 +387,15 @@ p {
   }
 }
 @media screen and (max-width: 768px) {
+  .order--1--tb {
+    order: 1;
+  }
+  .order--2--tb {
+    order: 2;
+  }
+  .order--3--tb {
+    order: 3;
+  }
   .container {
     max-width: 565px;
   }

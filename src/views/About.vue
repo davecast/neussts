@@ -27,7 +27,7 @@
         </div>
         <div class="grid grid__1--1 grid--2--12 grid__gap--35">
           <div
-            class="grid__item grid__item--center-v content--left--pd order--2"
+            class="grid__item grid__item--center-v content--left--pd order--2--tb"
           >
             <Title title="vision" color="2d2d2d" position="right" />
             <p class="text--normal text--grey--c text--right">
