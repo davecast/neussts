@@ -43,13 +43,13 @@
       <div class="container">
         <Title title="our team core" color="2d2d2d" position="center" />
         <p
-          class="text--normal text--grey--c mb--x3 text--center content--768--center"
+          class="text--normal text--grey--c mb--x3 text--center content--768--center content--595--center-lg"
         >
           We are formed by professionals from the energy sector, in the gas, oil
           and power generation industries, with
           <strong>more than 20 years of experience</strong> in areas such as
         </p>
-        <div class="grid grid__col--6 grid__gap--35">
+        <div class="grid features grid__col--6 grid__gap--35">
           <Feature image="about/maintenance.png">
             MAINTENANCE
           </Feature>
@@ -248,5 +248,18 @@ export default {
   bottom: 0;
   padding: 30px;
   box-sizing: border-box;
+}
+@media screen and (max-width: 980px) {
+  .features.grid__col--6 {
+    grid-template: 1fr / repeat(3, 1fr);
+  }
+  .grid__values[data-v-039c5b43] {
+    padding-top: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "item1 item1 item2 item2"
+      "item3 item3 item4 item4"
+      ". item5 item5 .";
+  }
 }
 </style>

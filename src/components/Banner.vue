@@ -67,4 +67,26 @@ export default {
 .banner__title--text {
   width: 595px;
 }
+@media screen and (max-width: 980px) {
+  .banner {
+    height: 595px;
+  }
+  .banner__title--big {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .banner--small {
+    max-height: 400px;
+    margin-top: 0px;
+  }
+  .banner__title--text {
+    width: 390px;
+  }
+  .banner__title--separator {
+    padding-bottom: 25px;
+  }
+  .banner__title--separator.mb--x3 {
+    margin-bottom: 25px;
+  }
+}
 </style>

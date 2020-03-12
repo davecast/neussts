@@ -62,7 +62,6 @@ export default {
 .title {
   position: relative;
   padding-bottom: 35px;
-  margin-bottom: 35px;
 }
 .title::before {
   content: "";
@@ -94,5 +93,15 @@ export default {
   line-height: 24px;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
+}
+@media screen and (max-width: 980px) {
+  .title {
+    padding-bottom: 20px;
+    margin-bottom: 15px !important;
+  }
+  .title__first {
+    font-size: 24px;
+    line-height: 18px;
+  }
 }
 </style>

@@ -137,4 +137,10 @@ export default {
   display: inline-block;
   margin: 0 3px 0 5px;
 }
+
+@media screen and (max-width: 980px) {
+  .footer__img {
+    max-width: 200px;
+  }
+}
 </style>

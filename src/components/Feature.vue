@@ -35,4 +35,10 @@ export default {
   font-size: 18px;
   line-height: 24px;
 }
+@media screen and (max-width: 980px) {
+  .feature__img {
+    max-width: 150px;
+    margin: 0 auto 20px;
+  }
+}
 </style>

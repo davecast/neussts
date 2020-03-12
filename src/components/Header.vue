@@ -17,32 +17,50 @@
           <router-link to="/" class="header__logo">
             <figure>
               <img
-                v-if="this.$route.path !== '/' && !isFixed"
+                v-if="
+                  this.$route.path !== '/' && !isFixed && this.windowWidth > 980
+                "
                 src="@/assets/logo-white.png"
               />
               <img v-else src="@/assets/logo.png" />
             </figure>
           </router-link>
-          <ul class="header__menu">
+          <ul class="header__menu" :class="{ header__open: this.burgerOpen }">
             <li class="header__menu--list">
-              <router-link to="/">Home</router-link>
+              <router-link v-on:click.native="handleMenu()" to="/"
+                >Home</router-link
+              >
             </li>
             <li class="header__menu--list">
-              <router-link to="/about">About</router-link>
+              <router-link v-on:click.native="handleMenu()" to="/about"
+                >About</router-link
+              >
             </li>
             <li class="header__menu--list">
-              <router-link to="/solutions">Solutions</router-link>
+              <router-link v-on:click.native="handleMenu()" to="/solutions"
+                >Solutions</router-link
+              >
             </li>
             <li class="header__menu--list">
-              <router-link to="/experience">Experience</router-link>
+              <router-link v-on:click.native="handleMenu()" to="/experience"
+                >Experience</router-link
+              >
             </li>
             <li class="header__menu--list">
-              <router-link to="/products">Products &amp; Brands</router-link>
+              <router-link v-on:click.native="handleMenu()" to="/products"
+                >Products &amp; Brands</router-link
+              >
             </li>
             <li class="header__menu--list">
-              <router-link to="/contact">Contact</router-link>
+              <router-link v-on:click.native="handleMenu()" to="/contact"
+                >Contact</router-link
+              >
             </li>
           </ul>
+          <div class="burger" @click="handleMenu">
+            <i v-if="!burgerOpen" class="wz-icon wz-bar"></i>
+            <i v-else class="wz-icon wz-closed"></i>
+          </div>
         </div>
       </div>
     </div>
@@ -61,7 +79,9 @@ export default {
   },
   data() {
     return {
-      isFixed: false
+      isFixed: false,
+      burgerOpen: false,
+      windowWidth: window.innerWidth
     };
   },
   methods: {
@@ -71,17 +91,24 @@ export default {
       } else {
         this.isFixed = false;
       }
+    },
+    handleMenu() {
+      this.burgerOpen = !this.burgerOpen;
+      console.log("click");
     }
   },
   computed: {
     classObject: function() {
       return {
-        header__transparent: this.$route.path !== "/"
+        header__transparent: this.$route.path !== "/" && this.windowWidth > 980
       };
     }
   },
   created() {
     window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener("resize", () => {
+      this.windowWidth = window.innerWidth;
+    });
   }
 };
 </script>
@@ -156,6 +183,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  z-index: 9;
 }
 .header__menu--list {
   margin-left: 35px;
@@ -203,7 +231,70 @@ export default {
   background-color: transparent;
   border: none;
 }
-
-@media screen and (max-width: 1200px) {
+.burger {
+  display: none;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  line-height: 28px;
+  color: #2d2d2d;
+}
+@media screen and (max-width: 980px) {
+  .burger {
+    display: flex;
+  }
+  .header__bottom {
+    position: relative;
+  }
+  .header__bottom.header__bottom__fixed {
+    position: fixed;
+  }
+  .header__menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    background: #fff;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    transform: translateY(-10px);
+    padding: 0;
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in;
+  }
+  .header__open {
+    height: auto;
+    overflow: hidden;
+    transform: translateY(0px);
+    padding: 20px;
+    opacity: 1;
+  }
+  .header__bottom.header__bottom__fixed .header__menu {
+    top: 69px;
+  }
+  .header__transparent .header__menu a,
+  .header__transparent .header__bottom__fixed .header__menu a {
+    color: #727272;
+  }
+  .header__menu a:hover,
+  .header__menu a.router-link-exact-active {
+    color: #efdc30;
+  }
+  .header__menu--list {
+    margin-left: 0px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .flags {
+    display: none;
+  }
+  .header__top .header__content {
+    justify-content: flex-end;
+  }
 }
 </style>

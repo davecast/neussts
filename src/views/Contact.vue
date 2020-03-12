@@ -136,4 +136,10 @@ export default {
 .info i {
   margin-top: 2px;
 }
+
+@media screen and (max-width: 980px) {
+  .grid_5_4_[data-v-df212a54] {
+    grid-template-areas: "form form form form form form form . info info info info";
+  }
+}
 </style>

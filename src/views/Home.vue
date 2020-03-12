@@ -13,7 +13,7 @@
     <DcSection class="back--white" backgroundImage="exp_back.png" attached>
       <div class="container">
         <Title title="experiences" color="2D2D2D" />
-        <div class="grid grid--4--12 grid__3 grid__gap--35 mb--x3">
+        <div class="grid grid--4--12 grid__3 grid__gap--35 mb--x3 mt--x3--lg">
           <Feature image="exp_1.png"> CONSULTING <br />MANAGER </Feature>
           <Feature image="exp_2.png"> PROCUREMENT <br />SERVICES </Feature>
           <Feature image="exp_3.png">
@@ -26,13 +26,13 @@
       </div>
     </DcSection>
     <DcSection
-      class="back--yellow"
+      class="back--yellow section--lg"
       backgroundImage="about__back.png"
       backgroundPosition="bottom"
     >
       <div class="container">
         <p
-          class="text--normal text--white mb--x3 text--center content--768--center"
+          class="text--normal text--white mb--x3 text--center content--768--center content--595--center-lg"
         >
           We offer solutions to the problems your company faces in the
           Operations, Production, Maintenance and Acquisitions processes.
@@ -45,11 +45,14 @@
         </NeButton>
       </div>
     </DcSection>
-    <DcSection class="back--black" backgroundImage="products__back.jpg">
+    <DcSection
+      class="back--black section--lg"
+      backgroundImage="products__back.jpg"
+    >
       <div class="container">
         <Title title="products &amp; brands" color="FFFFFF" />
         <p
-          class="text--normal text--white mb--x3 text--center content--768--center"
+          class="text--normal text--white mb--x3 text--center content--768--center content--595--center-lg"
         >
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
           itaque nulla recusandae at quod architecto autem tempore possimus
@@ -152,5 +155,11 @@ export default {
 .contact__information--text {
   padding-left: 25px;
   line-height: 24px;
+}
+
+@media screen and (max-width: 980px) {
+  .grid--4--12 {
+    max-width: 100%;
+  }
 }
 </style>

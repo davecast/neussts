@@ -160,4 +160,14 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+@media screen and (max-width: 980px) {
+  .grid__col--4 {
+    grid-template: 1fr / repeat(3, 1fr);
+    margin-top: 30px;
+  }
+  .grid__col--5 {
+    grid-template: 1fr / repeat(4, 1fr);
+  }
+}
+</style>
