@@ -78,5 +78,8 @@ export default {
   .callAction--back--white {
     background-position: center right;
   }
+  .grid__item--pd {
+    text-align: center;
+  }
 }
 </style>

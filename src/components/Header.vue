@@ -94,7 +94,6 @@ export default {
     },
     handleMenu() {
       this.burgerOpen = !this.burgerOpen;
-      console.log("click");
     }
   },
   computed: {

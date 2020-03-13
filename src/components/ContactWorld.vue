@@ -70,15 +70,15 @@ h2 figure img {
   max-width: 100%;
 }
 h2 span {
-  font-size: 28px;
+  font-size: 22px;
   line-height: 22px;
   text-transform: uppercase;
   font-weight: 900;
 }
 li {
   color: #aaaaaa;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 18px;
   display: grid;
   margin-bottom: 5px;
   grid-template: 1fr / 25px 1fr;

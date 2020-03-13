@@ -1,5 +1,5 @@
 <template>
-  <form class="form" @submit.prevent>
+  <form class="form" :class="{ form__hidden: isSend }" @submit.prevent>
     <div class="form__control">
       <label for="first__name" class="label text--smal text--black"
         >First Name <span>*</span></label
@@ -114,7 +114,7 @@
         form.comments.error.message
       }}</span>
     </div>
-    <div class="fomr__control">
+    <div class="form__control">
       <NeButton
         @custom-click="sendForm"
         onClickable
@@ -125,11 +125,31 @@
         send and contact us
       </NeButton>
     </div>
+    <div v-if="isLoading" class="form__loader">
+      <bar-loader
+        class="form__loader--spiner"
+        :color="'#2d2d2d'"
+        :loading="isLoading && !isSend"
+        :size="200"
+        :height="6"
+      ></bar-loader>
+      <span
+        class="form__success"
+        :class="{ form__success__view: isSend }"
+        v-if="isSend"
+        ><i class="wz-icon wz-check-double"></i> Thank you, we will contact you
+        soon</span
+      >
+    </div>
   </form>
 </template>
 
 <script>
+import api from "@/api";
+
 import NeButton from "@/components/Button.vue";
+import * as firebase from "firebase/app";
+import "firebase/database";
 
 export default {
   name: "Form",
@@ -139,51 +159,53 @@ export default {
   data() {
     return {
       errors: [],
+      isSend: false,
+      isLoading: false,
       form: {
         firstName: {
-          data: "",
+          data: "Prueba",
           error: {
             has: false,
             message: ""
           }
         },
         lastName: {
-          data: "",
+          data: "Apellido",
           error: {
             has: false,
             message: ""
           }
         },
         businessEmail: {
-          data: "",
+          data: "dave@gmail.com",
           error: {
             has: false,
             message: ""
           }
         },
         phone: {
-          data: "",
+          data: "04145787878",
           error: {
             has: false,
             message: ""
           }
         },
         companyName: {
-          data: "",
+          data: "davecast",
           error: {
             has: false,
             message: ""
           }
         },
         jobTitle: {
-          data: "",
+          data: "titulodetrabajo",
           error: {
             has: false,
             message: ""
           }
         },
         comments: {
-          data: "",
+          data: "comentarios de envio",
           error: {
             has: false,
             message: ""
@@ -193,10 +215,30 @@ export default {
     };
   },
   methods: {
+    fierbasePush(body) {
+      return firebase
+        .database()
+        .ref("requests")
+        .push()
+        .set(body);
+    },
     sendForm() {
       let checked = this.checkForm();
       if (checked) {
-        console.log("Form send");
+        let contentBody = {
+          first_name: this.form.firstName.data,
+          last_name: this.form.lastName.data,
+          email: this.form.businessEmail.data,
+          phone: this.form.phone.data,
+          company: this.form.companyName.data,
+          job: this.form.jobTitle.data,
+          comments: this.form.comments.data
+        };
+        this.isLoading = true;
+
+        this.fierbasePush(contentBody).finally(() => {
+          api.sendPost(contentBody).finally(() => (this.isSend = true));
+        });
       }
     },
     checkForm() {
@@ -289,14 +331,68 @@ export default {
 </script>
 
 <style scoped>
+.form__success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 18px;
+  color: #2d2d2d;
+  transform: translateY(15px);
+  opacity: 0;
+  transition: all 0.3s ease-out 0.2s;
+}
+.form__success i {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  border: 2px solid #4caf50;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  color: #4caf50;
+}
+.form__success__view {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.form__loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.75);
+  box-sizing: border-box;
+  border: 1px solid #cccccc;
+}
+.form__loader--spiner {
+}
 .form {
   background-color: #efefef;
   padding: 40px 30px;
+  position: relative;
+  opacity: 1;
+  transition: all 0.3s ease-in;
 }
 .form__control {
   margin-bottom: 25px;
   display: flex;
   flex-direction: column;
+  opacity: 1;
+  transition: all 0.3s ease-in;
+}
+.form__hidden .form__control {
+  transform: translateY(15px);
+  opacity: 0;
 }
 .label {
   display: block;

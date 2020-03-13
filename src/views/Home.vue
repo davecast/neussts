@@ -65,7 +65,12 @@
         </NeButton>
       </div>
     </DcSection>
-    <DcSection backgroundImage="exp_back.png" attached pd="0px">
+    <DcSection
+      class="contact__home"
+      backgroundImage="exp_back.png"
+      attached
+      pd="0px"
+    >
       <div class="container__full">
         <div class="grid grid__1--1">
           <div class="grid__item--pd pd__left--col contact__block">
@@ -216,6 +221,9 @@ export default {
       "feature1 feature1 feature1 feature1 feature1 feature1 feature1 feature1 feature1 feature1 feature1 feature1"
       "feature2 feature2 feature2 feature2 feature2 feature2 feature2 feature2 feature2 feature2 feature2 feature2"
       "feature3 feature3 feature3 feature3 feature3 feature3 feature3 feature3 feature3 feature3 feature3 feature3";
+  }
+  .section.contact__home {
+    padding: 0 !important;
   }
 }
 </style>
