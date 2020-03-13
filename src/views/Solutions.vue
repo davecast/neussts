@@ -112,9 +112,10 @@
               color="2d2d2d"
               position="right"
               :twoLines="true"
+              class="title--left--tb"
             />
             <p
-              class="solutions__paragraph solutions__paragraph--separator text--grey--c text--right"
+              class="solutions__paragraph solutions__paragraph--separator text--grey--c text--right text--left--tb"
             >
               We help Canadian, American, European and Asian manufacturing
               companies that wish to expand their business to the Latin American
@@ -185,6 +186,12 @@ export default {
   .solutions__paragraph {
     font-size: 18px;
     line-height: 31px;
+  }
+}
+@media screen and (max-width: 595px) {
+  .solutions__paragraph {
+    font-size: 14px;
+    line-height: 27px;
   }
 }
 </style>

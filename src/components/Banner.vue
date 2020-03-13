@@ -94,6 +94,9 @@ export default {
   .banner {
     height: calc(100vh - 135px);
   }
+  .banner__content {
+    text-align: center;
+  }
   .banner__title--big {
     font-size: 22px;
     line-height: 32px;
@@ -108,6 +111,7 @@ export default {
     font-size: 14px;
     line-height: 22px;
     text-align: center;
+    margin: 0 auto;
   }
   .banner__title--separator::before {
     left: 0;

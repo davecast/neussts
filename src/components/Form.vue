@@ -163,49 +163,49 @@ export default {
       isLoading: false,
       form: {
         firstName: {
-          data: "Prueba",
+          data: "",
           error: {
             has: false,
             message: ""
           }
         },
         lastName: {
-          data: "Apellido",
+          data: "",
           error: {
             has: false,
             message: ""
           }
         },
         businessEmail: {
-          data: "dave@gmail.com",
+          data: "",
           error: {
             has: false,
             message: ""
           }
         },
         phone: {
-          data: "04145787878",
+          data: "",
           error: {
             has: false,
             message: ""
           }
         },
         companyName: {
-          data: "davecast",
+          data: "",
           error: {
             has: false,
             message: ""
           }
         },
         jobTitle: {
-          data: "titulodetrabajo",
+          data: "",
           error: {
             has: false,
             message: ""
           }
         },
         comments: {
-          data: "comentarios de envio",
+          data: "",
           error: {
             has: false,
             message: ""
@@ -436,5 +436,12 @@ textarea {
   background: #ffd3d3;
   padding: 4px 10px;
   box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+  .form__success {
+    padding: 10px;
+    line-height: 24px !important;
+    text-align: center;
+  }
 }
 </style>

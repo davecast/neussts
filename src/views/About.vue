@@ -29,8 +29,13 @@
           <div
             class="grid__item grid__item--center-v content--left--pd order--2--tb"
           >
-            <Title title="vision" color="2d2d2d" position="right" />
-            <p class="text--normal text--grey--c text--right">
+            <Title
+              class="title--left--tb"
+              title="vision"
+              color="2d2d2d"
+              position="right"
+            />
+            <p class="text--normal text--grey--c text--right text--left--tb">
               To be recognized by our clients as an ally to solve their
               technical operational problems and global procurement problems.
             </p>

@@ -417,6 +417,10 @@ p {
     padding: 35px 0px;
   }
 
+  .text--left--tb {
+    text-align: left;
+  }
+
   .title__section {
     margin: 0 auto 15px;
   }
@@ -432,7 +436,7 @@ p {
 @media screen and (max-width: 595px) {
   .container,
   .title__section {
-    max-width: 300px;
+    max-width: 320px;
   }
   .pd__left--col {
     max-width: 300px;
@@ -447,7 +451,7 @@ p {
 @media screen and (max-width: 380px) {
   .container,
   .title__section {
-    max-width: 280px;
+    max-width: 300px;
   }
   .text--normal {
     font-size: 14px;

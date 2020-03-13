@@ -104,6 +104,15 @@ export default {
     line-height: 18px;
   }
 }
+@media screen and (max-width: 768px) {
+  .title--left--tb {
+    text-align: left !important;
+  }
+  .title--left--tb::before {
+    left: 0 !important;
+    right: auto;
+  }
+}
 @media screen and (max-width: 595px) {
   .brands .title {
     text-align: center !important;

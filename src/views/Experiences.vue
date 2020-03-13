@@ -20,12 +20,15 @@
               color="2d2d2d"
               position="right"
               :twoLines="true"
+              class="title--left--tb"
             />
             <ImageContent
               source="experience/exp__1.jpg"
               class="mb--x3 pdt--x1--tb"
             />
-            <p class="text--exp text--exp--separator text--grey--c text--right">
+            <p
+              class="text--exp text--exp--separator text--grey--c text--right text--left--tb"
+            >
               We apply the best practice to help organizations to improve their
               performance, operating primarily through the analysis of existing
               problems and the development of plans for improvement.
@@ -280,20 +283,23 @@
               title="OPERATION AND MAINTENANCE SERVICES"
               color="2d2d2d"
               position="right"
+              class="title--left--tb"
             />
             <ImageContent
               source="experience/exp__3.jpg"
               class="mb--x3 pdt--x1--tb"
             />
             <p
-              class="text--exp text--exp--separator text--grey--c text--right mb--x1"
+              class="text--exp text--exp--separator text--grey--c text--right mb--x1 text--left--tb"
             >
               The O&amp;M business is dedicated to operating and maintaining
               customer facilities related to energy transformation. The O&amp;M
               team will provide the best level of service and operations to
               preserve and maximize the value of the assets.
             </p>
-            <p class="text--exp text--exp--separator text--grey--c text--right">
+            <p
+              class="text--exp text--exp--separator text--grey--c text--right text--left--tb"
+            >
               O&amp;M services are designed to maximize the lifetime value of
               your assets. Neuss proactively monitors and manages your plants
               minimizing downtime and increasing site availability, resulting in
@@ -514,6 +520,12 @@ export default {
   .text--exp {
     font-size: 18px;
     line-height: 31px;
+  }
+}
+@media screen and (max-width: 595px) {
+  .text--exp {
+    font-size: 14px;
+    line-height: 27px;
   }
 }
 </style>
