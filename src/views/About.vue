@@ -260,7 +260,7 @@ export default {
   .features.grid__col--6 {
     grid-template: 1fr / repeat(3, 1fr);
   }
-  .grid__values[data-v-039c5b43] {
+  .grid__values {
     padding-top: 25px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
@@ -296,7 +296,7 @@ export default {
   .features .feature:nth-child(6) {
     grid-area: feature6;
   }
-  .grid__values[data-v-039c5b43][data-v-039c5b43] {
+  .grid__values {
     padding-top: 25px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
