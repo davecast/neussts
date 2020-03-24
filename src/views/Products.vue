@@ -4,7 +4,7 @@
       <h2
         class="banner__title--medium banner__title--separator text--white text--muli text--extrabold mb--x3"
       >
-        PRODUCTS &amp; BRANDS
+        PRODUCTS
       </h2>
       <p class="banner__title--text text--white text--normal m--none">
         In order to provide our customers with the best and most advanced
@@ -15,12 +15,7 @@
     </Banner>
     <DcSection class="back--grey--d">
       <div class="container">
-        <Title
-          title="products"
-          subtitle="portfolio of"
-          color="2d2d2d"
-          position="center"
-        />
+        <Title title="products" color="2d2d2d" position="center" />
         <div class="grid grid__col--4 grid__gap--35">
           <Product
             image="products/pro__1.jpg"

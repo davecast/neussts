@@ -11,20 +11,20 @@
             </router-link>
           </div>
           <div class="grid__item">
-            <h3 class="footer__title text--white mb--x2">menú</h3>
+            <h3 class="footer__title text--white mb--x2">menu</h3>
             <ul class="footer__menu">
               <li>
                 <router-link to="/">Home</router-link>
               </li>
               <li>
-                <router-link to="/about">about</router-link>
+                <router-link to="/company">company</router-link>
               </li>
               <li>
                 <router-link to="/solutions">Solutions</router-link>
               </li>
-              <li>
+              <!--<li>
                 <router-link to="/experience">experience</router-link>
-              </li>
+              </li>-->
               <li>
                 <router-link to="/products">products</router-link>
               </li>
@@ -34,7 +34,7 @@
             </ul>
           </div>
           <div class="grid__item">
-            <h3 class="footer__title text--white mb--x2">follow us</h3>
+            <h3 class="footer__title text--white mb--x2">social media</h3>
             <Social alignItems="right" />
           </div>
         </section>
@@ -45,10 +45,7 @@
         <div class="footer__bottom">
           <p>
             © 2020 <strong>NEUSS TECNICAL SERVICES</strong>. All Rights
-            Reserved. <router-link to="/">Terms of Service</router-link>
-            <span>|</span> <router-link to="/">Privacy</router-link>
-            <span>|</span>
-            <router-link to="/">Quality Policy</router-link>
+            Reserved.
           </p>
         </div>
       </div>
@@ -74,7 +71,7 @@ export default {
   display: inline-block;
 }
 .footer__img {
-  max-width: 250px;
+  max-width: 300px;
 }
 .footer__img img {
   max-width: 100%;
@@ -89,6 +86,7 @@ export default {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 350px;
 }
 .footer__menu li {
   position: relative;

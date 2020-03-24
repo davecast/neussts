@@ -1,6 +1,6 @@
 <template>
   <router-link
-    v-if="!onClickable"
+    v-if="!onClickable && !onSubmited"
     class="btn"
     :to="routeLink"
     v-slot="{ href, route, navigate }"
@@ -11,7 +11,19 @@
       </span>
     </a>
   </router-link>
-  <button @click="buttonClick" v-else class="btn" :style="styleButton">
+  <input
+    v-else-if="onSubmited"
+    class="btn"
+    :style="styleButton"
+    type="submit"
+    :value="valueInput"
+  />
+  <button
+    @click="buttonClick"
+    v-else-if="onClickable"
+    class="btn"
+    :style="styleButton"
+  >
     <slot></slot>
   </button>
 </template>
@@ -39,6 +51,14 @@ export default {
     onClickable: {
       type: Boolean,
       default: false
+    },
+    onSubmited: {
+      type: Boolean,
+      default: false
+    },
+    valueInput: {
+      type: String,
+      default: "TEXTO DEL BOTON"
     }
   },
   data() {

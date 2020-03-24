@@ -27,7 +27,7 @@
         <div class="grid grid_5_4_">
           <div class="contact__form">
             <h2 class="contact__form--title text--yellow  mb--x1">
-              AT NEUSS TECNICAL SERVICES
+              ENTER YOUR REQUEST.
             </h2>
             <p class="contact__form--text text--normal text--grey--c mb--x2">
               We will be pleased to answer any questions.
@@ -35,13 +35,42 @@
             <DcForm />
           </div>
           <div class="contact__info">
-            <Title
-              title="CONTACT INFORMATION"
-              color="2d2d2d"
-              position="left"
-              :twoLines="true"
-            />
-            <ul class="info">
+            <h2 class="contact__form--title text--black  mb--x1">
+              WHERE WE ARE
+            </h2>
+            <p class="contact__form--text text--normal text--grey--c mb--x2">
+              Contact us we waiting for your.
+            </p>
+            <div class="map">
+              <figure class="map__image">
+                <img src="@/assets/mapa__americas.png" alt="Where we are" />
+              </figure>
+              <figure class="map__country map__venezuela">
+                <img src="@/assets/mapa__venezuela.png" />
+              </figure>
+              <figure class="map__country map__canada">
+                <img src="@/assets/mapa__canada.png" />
+              </figure>
+              <figure class="map__country map__colombia">
+                <img src="@/assets/mapa__colombia.png" />
+              </figure>
+              <figure class="map__country map__peru">
+                <img src="@/assets/mapa__peru.png" />
+              </figure>
+              <figure class="map__flag flag__venezuela">
+                <img src="@/assets/venezuela.png" />
+              </figure>
+              <figure class="map__flag flag__canada">
+                <img src="@/assets/canada.png" />
+              </figure>
+              <figure class="map__flag flag__colombia">
+                <img src="@/assets/colombia.png" />
+              </figure>
+              <figure class="map__flag flag__peru">
+                <img src="@/assets/peru.png" />
+              </figure>
+            </div>
+            <!--<ul class="info">
               <li>
                 <i class="wz-icon wz-envelope"></i>
                 info@neuss-ts.com
@@ -70,7 +99,7 @@
               flag="venezuela.png"
               address="Centro Empresarial Colon, Piso 2 Lecherias"
               rif="883844774783"
-            />
+            />-->
           </div>
         </div>
       </div>
@@ -81,8 +110,8 @@
 <script>
 import Banner from "@/components/Banner.vue";
 import DcForm from "@/components/Form.vue";
-import Title from "@/components/NeTitle.vue";
-import ContactWorld from "@/components/ContactWorld.vue";
+//import Title from "@/components/NeTitle.vue";
+//import ContactWorld from "@/components/ContactWorld.vue";
 
 import DcSection from "@/layouts/DcSection.vue";
 
@@ -91,9 +120,7 @@ export default {
   components: {
     Banner,
     DcSection,
-    DcForm,
-    Title,
-    ContactWorld
+    DcForm
   },
   data() {
     return {};
@@ -136,7 +163,65 @@ export default {
 .info i {
   margin-top: 2px;
 }
-
+.map {
+  width: 400px;
+  position: relative;
+}
+.map__image {
+  max-width: 100%;
+}
+.map__image img {
+  width: 100%;
+}
+.map__country {
+  position: absolute;
+}
+.map__country img {
+  max-width: 100%;
+}
+.map__venezuela {
+  width: 46.56px;
+  top: 287px;
+  right: 117px;
+}
+.map__canada {
+  width: 263.67px;
+  top: 26px;
+  left: 109px;
+}
+.map__peru {
+  width: 46.56px;
+  bottom: 166px;
+  left: 207.5px;
+}
+.map__colombia {
+  width: 43.76px;
+  bottom: 219px;
+  left: 216px;
+}
+.map__flag {
+  position: absolute;
+  width: 25px;
+}
+.map__flag img {
+  max-width: 100%;
+}
+.flag__canada {
+  top: 100px;
+  left: 180px;
+}
+.flag__colombia {
+  bottom: 240px;
+  right: 150px;
+}
+.flag__peru {
+  bottom: 190px;
+  right: 156px;
+}
+.flag__venezuela {
+  bottom: 255px;
+  right: 124px;
+}
 @media screen and (max-width: 980px) {
   .grid_5_4_ {
     grid-template-areas: "form form form form form form form . info info info info";

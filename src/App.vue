@@ -49,6 +49,12 @@ i.wz-icon {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.wz-linkedin-brands:before {
+  content: "\e912";
+}
+.wz-facebook-square-brands:before {
+  content: "\e913";
+}
 .wz-id-card:before {
   content: "\e911";
 }
@@ -331,6 +337,26 @@ p {
 }
 .order--3 {
   order: 3;
+}
+
+.list {
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.list i {
+  margin-right: 5px;
+}
+.list--line-height p {
+  line-height: 24px;
+  margin-top: -4px;
+}
+.list--right {
+  text-align: right;
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 1200px) {

@@ -1,10 +1,18 @@
 <template>
   <div class="feature">
-    <figure class="feature__img">
-      <img :src="require(`@/assets/${this.image}`)" />
+    <figure class="feature__img" :class="{ feature__img__link: link }">
+      <router-link v-if="link" :to="this.link">
+        <img :src="require(`@/assets/${this.image}`)" />
+      </router-link>
+      <img v-else :src="require(`@/assets/${this.image}`)" />
     </figure>
-    <h3 class="feature__text text--center text--yellow">
-      <slot></slot>
+    <h3 class="feature__text text--center text--black">
+      <router-link class="feature__link" v-if="link" :to="this.link">
+        <slot></slot>
+      </router-link>
+      <span v-else>
+        <slot></slot>
+      </span>
     </h3>
   </div>
 </template>
@@ -15,6 +23,10 @@ export default {
   props: {
     image: {
       type: String
+    },
+    link: {
+      type: String,
+      default: undefined
     }
   }
 };
@@ -34,6 +46,18 @@ export default {
 .feature__text {
   font-size: 18px;
   line-height: 24px;
+}
+.feature__link {
+  color: #2d2d2d;
+}
+.feature__link:hover {
+  color: #efdc30;
+}
+.feature__img__link {
+  transition: all 0.2s ease-in-out;
+}
+.feature__img__link:hover {
+  transform: scale(1.05);
 }
 @media screen and (max-width: 980px) {
   .feature__img {

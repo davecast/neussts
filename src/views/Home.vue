@@ -1,30 +1,37 @@
 <template>
   <div class="home">
-    <Banner type="big" img="banner.jpg" class="text--center">
+    <Banner
+      class="text--center"
+      :image-array="['banner.jpg', 'slide2.jpg', 'slide3.jpg']"
+      :delay-move="5000"
+    >
       <h1
-        class="banner__title--big text--center text--white text--muli text--extrabold mb--x4"
+        class="banner__title--big text--center text--white text--muli text--extrabold mb--x2"
       >
-        CONSULTING MANAGER AND PROCUREMENT SERVICES FOR OIL AND GAS INDUSTRY
+        CONSULTING MANAGEMENT AND PROCUREMENT SERVICES FOR OIL AND GAS INDUSTRY
       </h1>
-      <NeButton routeLink="/solutions" color="2d2d2d" background="EFDC30">
-        our solutions
-      </NeButton>
+      <p class="text--grey--d text--big">Offering solutions, our passion</p>
     </Banner>
     <DcSection class="back--white" backgroundImage="exp_back.png" attached>
       <div class="container text--center">
-        <Title title="experiences" color="2D2D2D" />
+        <Title title="our solutions" color="2D2D2D" />
         <div
           class="grid grid--4--12 grid__3 grid__gap--35 mb--x3 mt--x3--lg features"
         >
-          <Feature image="exp_1.png"> CONSULTING <br />MANAGER </Feature>
-          <Feature image="exp_2.png"> PROCUREMENT <br />SERVICES </Feature>
-          <Feature image="exp_3.png">
-            REPRESENTATIONS &amp; <br />PROMOTIONS
+          <Feature image="exp_1.png" link="/solutions#consulting">
+            CONSULTING <br />MANAGEMENT SERVICE</Feature
+          >
+          <Feature image="exp_2.png" link="/solutions#supply">
+            SUPLY AND <br />PROCUREMENT SERVICES
+          </Feature>
+          <Feature image="exp_3.png" link="/solutions#operations">
+            OPERATION AND <br />
+            MAINTENANCE SERVICES
           </Feature>
         </div>
-        <NeButton routeLink="/experience" color="2d2d2d" background="EFDC30">
+        <!--<NeButton routeLink="/experience" color="2d2d2d" background="EFDC30">
           what we do for
-        </NeButton>
+        </NeButton>-->
       </div>
     </DcSection>
     <DcSection
@@ -36,8 +43,9 @@
         <p
           class="text--normal text--white mb--x3 text--center content--768--center content--595--center-lg"
         >
-          We offer solutions to the problems your company faces in the
-          Operations, Production, Maintenance and Acquisitions processes.
+          We offer the highest quality of services and products through simple
+          processes, and effective communication, and promote products and
+          services in emerging markets.
         </p>
         <p class="text--big text--white mb--x3 text--center">
           Making efficient and effective decisions for your business.
@@ -52,14 +60,35 @@
       backgroundImage="products__back.jpg"
     >
       <div class="container">
-        <Title title="products &amp; brands" color="FFFFFF" />
+        <Title title="products" color="FFFFFF" />
         <p
           class="text--normal text--white mb--x3 text--center content--768--center content--595--center-lg"
         >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
-          itaque nulla recusandae at quod architecto autem tempore possimus
-          tempora.
+          All our products are manufactured under the highest international
+          standards. This allows us to guarantee products that are reliable,
+          safe and in harmony with the environment
         </p>
+        <Slider
+          class="mb--x3"
+          :pictures="[
+            '/headstage/ansi.png',
+            '/headstage/apiq.png',
+            '/headstage/astm.png',
+            '/headstage/ce.png',
+            '/headstage/icc.png',
+            '/headstage/iec.png',
+            '/headstage/iqnet.png',
+            '/headstage/isa.png',
+            '/headstage/iso9001.png',
+            '/headstage/iso14001.png',
+            '/headstage/iso18001.png',
+            '/headstage/nace.png',
+            '/headstage/nec.png',
+            '/headstage/nema.png',
+            '/headstage/nfc.png',
+            '/headstage/saul.png'
+          ]"
+        />
         <NeButton routeLink="/products" color="2d2d2d" background="EFDC30">
           our products
         </NeButton>
@@ -74,15 +103,14 @@
       <div class="container__full">
         <div class="grid grid__1--1">
           <div class="grid__item--pd pd__left--col contact__block">
-            <Title title="contact us" color="2D2D2D" position="left" />
+            <Title title="contact" color="2D2D2D" position="left" />
             <ul class="contact__information">
               <li class="text--grey--a contact__information--size mb--x2">
-                <header class="contact__information--header">
-                  <i class="wz-icon wz-point"></i>
-                  <h4 class="text--uppercase">address</h4>
+                <header class="contact__information--header  mb--x2">
+                  <h4 class="text--uppercase">neuss newsletter</h4>
                 </header>
                 <p class="contact__information--text text__content--small ">
-                  37 Estelle-MAuffette Notre Dame De L'Ile-Perrot (QC) J7V 9R8
+                  <Formnews />
                 </p>
               </li>
               <li class="text--grey--a contact__information--size">
@@ -100,7 +128,7 @@
             class="back--yellow grid__item--pd content--cover contact--cover pd__right--col content--rigth--pd"
           >
             <h2 class="title__section text--white mb--x3">
-              HAVE A QUESTIONS OR HAVE A SPECIAL REQUEST?
+              HAVE A QUESTION OR A SPECIAL REQUEST?
             </h2>
             <p class="text--normal text--white text__content--small  mb--x3">
               We are ready to help you. In fact, we promise to get back to you
@@ -121,6 +149,8 @@ import Banner from "@/components/Banner.vue";
 import NeButton from "@/components/Button.vue";
 import Title from "@/components/NeTitle.vue";
 import Feature from "@/components/Feature.vue";
+import Slider from "@/components/Slider.vue";
+import Formnews from "@/components/FormNewsletter.vue";
 
 import DcSection from "@/layouts/DcSection.vue";
 
@@ -131,7 +161,9 @@ export default {
     NeButton,
     DcSection,
     Title,
-    Feature
+    Feature,
+    Slider,
+    Formnews
   },
   mounted() {
     window.scrollTo(0, 0);

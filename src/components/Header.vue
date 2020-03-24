@@ -7,6 +7,7 @@
           <Social
             facebook="https://www.facebook.com/"
             twitter="https://twitter.com/"
+            linkeding="https://www.linkedin.com/"
           />
         </div>
       </div>
@@ -32,8 +33,8 @@
               >
             </li>
             <li class="header__menu--list">
-              <router-link v-on:click.native="handleMenu()" to="/about"
-                >About</router-link
+              <router-link v-on:click.native="handleMenu()" to="/company"
+                >Company</router-link
               >
             </li>
             <li class="header__menu--list">
@@ -41,14 +42,14 @@
                 >Solutions</router-link
               >
             </li>
-            <li class="header__menu--list">
+            <!--<li class="header__menu--list">
               <router-link v-on:click.native="handleMenu()" to="/experience"
                 >Experience</router-link
               >
-            </li>
+            </li>-->
             <li class="header__menu--list">
               <router-link v-on:click.native="handleMenu()" to="/products"
-                >Products &amp; Brands</router-link
+                >Products</router-link
               >
             </li>
             <li class="header__menu--list">
@@ -162,10 +163,10 @@ export default {
   max-height: inherit;
   overflow: hidden;
   display: block;
-  width: 180px;
+  width: 250px;
 }
 .header__bottom__fixed .header__logo {
-  width: 130px;
+  width: 200px;
 }
 .header__logo figure {
   width: 100%;

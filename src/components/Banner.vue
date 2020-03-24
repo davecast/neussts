@@ -4,7 +4,25 @@
     :class="type === 'small' ? 'banner--small' : 'banner--big'"
     :style="{ backgroundImage: `url(${imageUrl})` }"
   >
-    <div class="container">
+    <section v-if="this.imageArray.length > 0" class="banner__slider">
+      <article
+        v-for="(picture, index) in this.imageArray"
+        :key="index"
+        class="banner__slider--item"
+        :class="{ banner__slider__item__active: index === 0 }"
+      >
+        <figure class="banner__slider--item--cover">
+          <img
+            :src="require(`@/assets/${picture}`)"
+            alt="Descripcion de la imagen de noticias"
+          />
+        </figure>
+      </article>
+    </section>
+    <div
+      class="container"
+      :class="{ container__slider: this.imageArray.length > 0 }"
+    >
       <div v-if="type === 'small'" class="banner__content">
         <slot></slot>
       </div>
@@ -18,11 +36,67 @@
 <script>
 export default {
   name: "Banner",
-  props: ["type", "img"],
+  props: {
+    type: {
+      type: String,
+      default: "big"
+    },
+    img: {
+      type: String,
+      default: ""
+    },
+    imageArray: {
+      type: Array,
+      default: function() {
+        return [];
+      }
+    },
+    delayMove: {
+      type: Number,
+      default: 6500
+    }
+  },
   data() {
     return {
-      imageUrl: require(`@/assets/${this.img}`)
+      sliderInterval: "",
+      imageUrl: this.img ? require(`@/assets/${this.img}`) : ""
     };
+  },
+  methods: {
+    handleSlider() {
+      clearInterval(this.sliderInterval);
+      let $bannerActive = document.querySelector(
+        ".banner__slider__item__active"
+      );
+      let $bannerContent = document.querySelector(".banner__slider");
+
+      if ($bannerActive.nextElementSibling == null) {
+        $bannerActive.classList.remove("banner__slider__item__active");
+        $bannerContent.firstElementChild.classList.add(
+          "banner__slider__item__active"
+        );
+      } else {
+        $bannerActive.classList.remove("banner__slider__item__active");
+        $bannerActive.nextElementSibling.classList.add(
+          "banner__slider__item__active"
+        );
+      }
+
+      this.handleAutoMove();
+    },
+    handleAutoMove() {
+      this.sliderInterval = setInterval(() => {
+        this.handleSlider();
+      }, this.delayMove);
+    }
+  },
+  created() {
+    if (this.imageArray.length > 0) {
+      this.handleAutoMove();
+    }
+  },
+  beforeDestroy() {
+    clearInterval(this.sliderInterval);
   }
 };
 </script>
@@ -36,6 +110,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .banner--small {
   max-height: 500px;
@@ -66,6 +141,62 @@ export default {
 }
 .banner__title--text {
   width: 595px;
+}
+.banner__slider {
+  position: absolute;
+  background: #222;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.banner__slider--item {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in;
+}
+
+.banner__slider--item.banner__slider__item__active {
+  z-index: 1;
+  opacity: 1;
+  transition: all 0.5s ease-in 0s;
+}
+
+.banner__slider--item--cover {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.banner__slider--item--cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transform: scale(1);
+  transition: all 0.3s ease-in;
+}
+.banner__slider--item.banner__slider__item__active
+  .banner__slider--item--cover
+  img {
+  transform: scale(1.05);
+}
+.container__slider {
+  z-index: 1;
 }
 @media screen and (max-width: 980px) {
   .banner {

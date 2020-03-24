@@ -1,117 +1,53 @@
 <template>
   <form class="form" :class="{ form__hidden: isSend }" @submit.prevent>
     <div class="form__control">
-      <label for="first__name" class="label text--smal text--black"
-        >First Name <span>*</span></label
+      <label for="fullName" class="label text--smal text--black"
+        >Full name <span>*</span></label
       >
       <input
         class="input"
-        name="first__name"
-        id="first__name"
-        v-model="form.firstName.data"
-        placeholder="First Name"
-        :class="{ input__error: form.firstName.error.has }"
+        name="fullName"
+        id="fullName"
+        v-model="form.fullName.data"
+        placeholder="Full Name"
+        :class="{ input__error: form.fullName.error.has }"
       />
-      <span v-if="form.firstName.error.has" class="error">{{
-        form.firstName.error.message
+      <span v-if="form.fullName.error.has" class="error">{{
+        form.fullName.error.message
       }}</span>
     </div>
     <div class="form__control">
-      <label for="last__name" class="label text--smal text--black"
-        >Last Name <span>*</span></label
-      >
-      <input
-        class="input"
-        name="last__name"
-        id="last__name"
-        v-model="form.lastName.data"
-        placeholder="Last Name"
-        :class="{ input__error: form.lastName.error.has }"
-      />
-      <span v-if="form.lastName.error.has" class="error">{{
-        form.lastName.error.message
-      }}</span>
-    </div>
-    <div class="form__control">
-      <label for="bussinessEmail" class="label text--smal text--black"
+      <label for="email" class="label text--smal text--black"
         >Business Email <span>*</span></label
       >
       <input
         class="input"
-        name="bussinessEmail"
-        id="bussinessEmail"
-        v-model="form.businessEmail.data"
-        placeholder="Business Email"
-        :class="{ input__error: form.businessEmail.error.has }"
+        name="email"
+        id="email"
+        v-model="form.email.data"
+        placeholder="Email"
+        :class="{ input__error: form.email.error.has }"
       />
-      <span v-if="form.businessEmail.error.has" class="error">{{
-        form.businessEmail.error.message
+      <span v-if="form.email.error.has" class="error">{{
+        form.email.error.message
       }}</span>
     </div>
     <div class="form__control">
-      <label for="phone" class="label text--smal text--black"
-        >Phone Number <span>*</span></label
-      >
-      <input
-        class="input"
-        name="phone"
-        id="phone"
-        v-model="form.phone.data"
-        placeholder="Phone Number"
-        :class="{ input__error: form.phone.error.has }"
-      />
-      <span v-if="form.phone.error.has" class="error">{{
-        form.phone.error.message
-      }}</span>
-    </div>
-    <div class="form__control">
-      <label for="companyName" class="label text--smal text--black"
-        >Company Name <span>*</span></label
-      >
-      <input
-        class="input"
-        name="companyName"
-        id="companyName"
-        v-model="form.companyName.data"
-        placeholder="Company Name"
-        :class="{ input__error: form.companyName.error.has }"
-      />
-      <span v-if="form.companyName.error.has" class="error">{{
-        form.companyName.error.message
-      }}</span>
-    </div>
-    <div class="form__control">
-      <label for="jobTitle" class="label text--smal text--black"
-        >Job Title <span>*</span></label
-      >
-      <input
-        class="input"
-        name="jobTitle"
-        id="jobTitle"
-        v-model="form.jobTitle.data"
-        placeholder="Job Title"
-        :class="{ input__error: form.jobTitle.error.has }"
-      />
-      <span v-if="form.jobTitle.error.has" class="error">{{
-        form.jobTitle.error.message
-      }}</span>
-    </div>
-    <div class="form__control">
-      <label for="comments" class="label text--smal text--black"
-        >Comments <span>*</span></label
+      <label for="message" class="label text--smal text--black"
+        >Message <span>*</span></label
       >
       <textarea
-        name="comments"
-        id="comments"
-        v-model="form.comments.data"
+        name="message"
+        id="message"
+        v-model="form.message.data"
         cols="40"
         rows="5"
         class="textarea"
-        placeholder="Comments"
-        :class="{ input__error: form.comments.error.has }"
+        placeholder="Message"
+        :class="{ input__error: form.message.error.has }"
       ></textarea>
-      <span v-if="form.comments.error.has" class="error">{{
-        form.comments.error.message
+      <span v-if="form.message.error.has" class="error">{{
+        form.message.error.message
       }}</span>
     </div>
     <div class="form__control">
@@ -122,7 +58,7 @@
         background="EFDC30"
         align="left"
       >
-        send and contact us
+        send your request
       </NeButton>
     </div>
     <div v-if="isLoading" class="form__loader">
@@ -162,49 +98,21 @@ export default {
       isSend: false,
       isLoading: false,
       form: {
-        firstName: {
+        fullName: {
           data: "",
           error: {
             has: false,
             message: ""
           }
         },
-        lastName: {
+        email: {
           data: "",
           error: {
             has: false,
             message: ""
           }
         },
-        businessEmail: {
-          data: "",
-          error: {
-            has: false,
-            message: ""
-          }
-        },
-        phone: {
-          data: "",
-          error: {
-            has: false,
-            message: ""
-          }
-        },
-        companyName: {
-          data: "",
-          error: {
-            has: false,
-            message: ""
-          }
-        },
-        jobTitle: {
-          data: "",
-          error: {
-            has: false,
-            message: ""
-          }
-        },
-        comments: {
+        message: {
           data: "",
           error: {
             has: false,
@@ -226,13 +134,9 @@ export default {
       let checked = this.checkForm();
       if (checked) {
         let contentBody = {
-          first_name: this.form.firstName.data,
-          last_name: this.form.lastName.data,
-          email: this.form.businessEmail.data,
-          phone: this.form.phone.data,
-          company: this.form.companyName.data,
-          job: this.form.jobTitle.data,
-          comments: this.form.comments.data
+          fullName: this.form.fullName.data,
+          email: this.form.email.data,
+          message: this.form.message.data
         };
         this.isLoading = true;
 
@@ -244,66 +148,31 @@ export default {
     checkForm() {
       this.errors = [];
 
-      if (!this.form.firstName.data) {
-        this.form.firstName.error.message = "First name is required field";
-        this.form.firstName.error.has = true;
+      if (!this.form.fullName.data) {
+        this.form.fullName.error.message = "First name is required field";
+        this.form.fullName.error.has = true;
       } else {
-        this.form.firstName.error.has = false;
-        this.form.firstName.error.message = "";
+        this.form.fullName.error.has = false;
+        this.form.fullName.error.message = "";
       }
-      if (!this.form.lastName.data) {
-        this.form.lastName.error.has = true;
-        this.form.lastName.error.message = "Last name is required field";
+      if (!this.form.email.data) {
+        this.form.email.error.has = true;
+        this.form.email.error.message = "Business email is required field";
       } else {
-        this.form.lastName.error.has = false;
-        this.form.lastName.error.message = "";
-      }
-      if (!this.form.businessEmail.data) {
-        this.form.businessEmail.error.has = true;
-        this.form.businessEmail.error.message =
-          "Business email is required field";
-      } else {
-        if (!this.validEmail(this.form.businessEmail.data)) {
-          this.form.businessEmail.error.has = true;
-          this.form.businessEmail.error.message =
-            "Please use a correct email format";
+        if (!this.validEmail(this.form.email.data)) {
+          this.form.email.error.has = true;
+          this.form.email.error.message = "Please use a correct email format";
         } else {
-          this.form.businessEmail.error.has = false;
-          this.form.businessEmail.error.message = "";
+          this.form.email.error.has = false;
+          this.form.email.error.message = "";
         }
       }
-      if (!this.form.phone.data) {
-        this.form.phone.error.has = true;
-        this.form.phone.error.message = "Phone is required field";
+      if (!this.form.message.data) {
+        this.form.message.error.has = true;
+        this.form.message.error.message = "Comments is required field";
       } else {
-        if (!this.validPhone(this.form.phone.data)) {
-          this.form.phone.error.has = true;
-          this.form.phone.error.message = "Please use a correct phone format";
-        } else {
-          this.form.phone.error.has = false;
-          this.form.phone.error.message = "";
-        }
-      }
-      if (!this.form.companyName.data) {
-        this.form.companyName.error.has = true;
-        this.form.companyName.error.message = "Company name is required field";
-      } else {
-        this.form.companyName.error.has = false;
-        this.form.companyName.error.message = "";
-      }
-      if (!this.form.jobTitle.data) {
-        this.form.jobTitle.error.has = true;
-        this.form.jobTitle.error.message = "Job title is required field";
-      } else {
-        this.form.jobTitle.error.has = false;
-        this.form.jobTitle.error.message = "";
-      }
-      if (!this.form.comments.data) {
-        this.form.comments.error.has = true;
-        this.form.comments.error.message = "Comments is required field";
-      } else {
-        this.form.comments.error.has = false;
-        this.form.comments.error.message = "";
+        this.form.message.error.has = false;
+        this.form.message.error.message = "";
       }
 
       for (const key in this.form) {
@@ -321,10 +190,6 @@ export default {
       // eslint-disable-next-line no-use-before-define
       var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(email);
-    },
-    validPhone(phone) {
-      var re = /(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)([2-9]1[02-9]‌|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})\s*(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+)\s*)?$/;
-      return re.test(phone);
     }
   }
 };

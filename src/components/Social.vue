@@ -10,6 +10,11 @@
         <i class="wz-icon wz-twitter-brands"></i>
       </a>
     </li>
+    <li :style="styleLi">
+      <a :href="linkedin">
+        <i class="wz-icon wz-linkedin-brands"></i>
+      </a>
+    </li>
   </ul>
 </template>
 
@@ -23,6 +28,9 @@ export default {
     twitter: {
       type: String
     },
+    linkedin: {
+      type: String
+    },
     alignItems: {
       type: String,
       default: "left"
@@ -32,7 +40,7 @@ export default {
     return {
       styleLi: {
         margin:
-          this.alignItems === "right" ? "0px 10px 0px 0px" : "0px 0px 0px 10px"
+          this.alignItems === "right" ? "0px 15px 0px 0px" : "0px 0px 0px 15px"
       }
     };
   }
