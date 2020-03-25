@@ -446,9 +446,16 @@ p {
   .text--left--tb {
     text-align: left;
   }
+  .text--cebter--tb {
+    text-align: center;
+  }
 
   .title__section {
     margin: 0 auto 15px;
+  }
+  .list--right {
+    text-align: left;
+    justify-content: start;
   }
 
   .pdt--x1--tb {

@@ -121,4 +121,10 @@ export default {
     right: 0px !important;
   }
 }
+@media screen and (max-width: 380px) {
+  .title__first {
+    font-size: 18px;
+    line-height: 12px;
+  }
+}
 </style>

@@ -106,7 +106,10 @@ export default {
   height: 75px;
   object-fit: contain;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 768px) {
+  .brand__carousel {
+    max-width: 442px;
+  }
 }
 
 @media screen and (max-width: 595px) {

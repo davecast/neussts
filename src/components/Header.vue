@@ -297,4 +297,9 @@ export default {
     justify-content: flex-end;
   }
 }
+@media screen and (max-width: 595px) {
+  .header__logo {
+    max-width: 180px;
+  }
+}
 </style>

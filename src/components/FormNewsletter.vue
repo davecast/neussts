@@ -213,4 +213,9 @@ textarea {
   padding: 4px 10px;
   box-sizing: border-box;
 }
+@media screen and (max-width: 768px) {
+  .form__control input[type="submit"] {
+    margin: 0 auto !important;
+  }
+}
 </style>

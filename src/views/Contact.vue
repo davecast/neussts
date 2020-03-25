@@ -26,19 +26,27 @@
       <div class="container">
         <div class="grid grid_5_4_">
           <div class="contact__form">
-            <h2 class="contact__form--title text--yellow  mb--x1">
+            <h2
+              class="contact__form--title text--yellow  mb--x1 text--cebter--tb"
+            >
               ENTER YOUR REQUEST.
             </h2>
-            <p class="contact__form--text text--normal text--grey--c mb--x2">
+            <p
+              class="contact__form--text text--normal text--grey--c mb--x2 text--cebter--tb"
+            >
               We will be pleased to answer any questions.
             </p>
             <DcForm />
           </div>
           <div class="contact__info">
-            <h2 class="contact__form--title text--black  mb--x1">
+            <h2
+              class="contact__form--title text--black  mb--x1 text--cebter--tb"
+            >
               WHERE WE ARE
             </h2>
-            <p class="contact__form--text text--normal text--grey--c mb--x2">
+            <p
+              class="contact__form--text text--normal text--grey--c mb--x2 text--cebter--tb"
+            >
               Contact us we waiting for your.
             </p>
             <div class="map">
@@ -233,11 +241,58 @@ export default {
       "info info info info info info info info info info info info"
       "form form form form form form form form form form form form";
   }
+  .map {
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 595px) {
   .contact__form--title {
     font-size: 22px;
     line-height: 22px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .map {
+    width: 300px;
+  }
+  .map__venezuela {
+    width: 34.93px;
+    top: 215px;
+    right: 88px;
+  }
+  .map__canada {
+    width: 197.78px;
+    top: 20px;
+    left: 80px;
+  }
+  .map__colombia {
+    width: 32.82px;
+    bottom: 165px;
+    left: 160px;
+  }
+  .map__peru {
+    width: 34.93px;
+    bottom: 124px;
+    left: 155.5px;
+  }
+  .map__flag {
+    width: 20px;
+  }
+  .flag__venezuela {
+    bottom: 192px;
+    right: 94px;
+  }
+  .flag__canada {
+    top: 75px;
+    left: 140px;
+  }
+  .flag__colombia {
+    bottom: 180px;
+    right: 115px;
+  }
+  .flag__peru {
+    bottom: 145px;
+    right: 120px;
   }
 }
 </style>
