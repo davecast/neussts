@@ -7,8 +7,10 @@
         COMPANY
       </h2>
       <p class="banner__title--text text--white text--normal m--none">
-        We offer the highest quality of services and products through simple
-        processes, and effective communication, and promote products and
+        Neuss Technical Services (NTS) is a company that relies on highly
+        experienced professionals, with a global vision to assist the energy
+        industry. We offer the highest quality of services and products through
+        simple processes, and effective communication, and promote products and
         services in emerging markets. At Neuss, we always seek the solution the
         client truly needs.
       </p>

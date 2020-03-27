@@ -50,7 +50,7 @@
         <p class="text--big text--white mb--x3 text--center">
           Making efficient and effective decisions for your business.
         </p>
-        <NeButton routeLink="/about">
+        <NeButton routeLink="/company">
           more about us
         </NeButton>
       </div>

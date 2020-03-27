@@ -261,7 +261,7 @@
             class="grid__item grid__item--center-v content--left--pd order--2--tb"
           >
             <Title
-              title="REPRESENTATIONS"
+              title="Operation and Maintenance Services"
               color="2d2d2d"
               position="right"
               :twoLines="true"
@@ -323,6 +323,12 @@
                 <i class="wz-icon wz-check-double text--black"></i>
                 <p class="text--grey--c">
                   Preventative Maintenance
+                </p>
+              </li>
+              <li class="list list--right">
+                <i class="wz-icon wz-check-double text--black"></i>
+                <p class="text--grey--c">
+                  Corrective Maintenance
                 </p>
               </li>
             </ul>
