@@ -155,6 +155,42 @@ import Formnews from "@/components/FormNewsletter.vue";
 import DcSection from "@/layouts/DcSection.vue";
 
 export default {
+  metaInfo: {
+    title: "Neuss Technical Services",
+    titleTemplate: null,
+    meta: [
+      {
+        name: "description",
+        hid: "description",
+        content:
+          "Neuss Technical Services (NTS) is a company that relies on highly experienced professionals, with a global vision to assist the energy industry."
+      },
+      // Open Graph
+      { name: "og:title", content: "Neuss Technical Services" },
+      {
+        name: "og:description",
+        content:
+          "Neuss Technical Services (NTS) is a company that relies on highly experienced professionals, with a global vision to assist the energy industry."
+      },
+      { name: "og:type", content: "website" },
+      { name: "og:url", content: "https://www.neuss-ts.com/" },
+      { name: "og:image", content: "https://davecastworks.com/meta_640.jpg" },
+      // Twitter Card
+      { name: "twitter:card", content: "summary" },
+      { name: "twitter:site", content: "@neussts" },
+      { name: "twitter:title", content: "Neuss Technical Services" },
+      {
+        name: "twitter:description",
+        content:
+          "Neuss Technical Services (NTS) is a company that relies on highly experienced professionals, with a global vision to assist the energy industry."
+      },
+      {
+        name: "twitter:image",
+        content: "https://davecastworks.com/meta_640.jpg"
+      },
+      { name: "twitter:image:alt", content: "NeussTS Logo" }
+    ]
+  },
   name: "Home",
   components: {
     Banner,

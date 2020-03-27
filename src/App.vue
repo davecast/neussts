@@ -11,6 +11,13 @@ import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
+  metaInfo: {
+    titleTemplate: "%s | Neuss Technical Services",
+    htmlAttrs: {
+      lang: "en",
+      amp: true
+    }
+  },
   name: "App",
   components: {
     Header,

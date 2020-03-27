@@ -139,6 +139,44 @@ import ImageContent from "@/components/ImageContent.vue";
 import DcSection from "@/layouts/DcSection.vue";
 
 export default {
+  metaInfo: {
+    title: "Products",
+    meta: [
+      {
+        name: "description",
+        hid: "description",
+        content:
+          "We are in continuous development of alliances and representations of the best manufacturing companies for the oil and gas industry."
+      },
+      // Open Graph
+      { name: "og:title", content: "Products | Neuss Technical Services" },
+      {
+        name: "og:description",
+        content:
+          "We are in continuous development of alliances and representations of the best manufacturing companies for the oil and gas industry."
+      },
+      { name: "og:type", content: "website" },
+      { name: "og:url", content: "https://www.neuss-ts.com/" },
+      { name: "og:image", content: "https://davecastworks.com/meta_640.jpg" },
+      // Twitter Card
+      { name: "twitter:card", content: "summary" },
+      { name: "twitter:site", content: "@neussts" },
+      {
+        name: "twitter:title",
+        content: "Products | Neuss Technical Services"
+      },
+      {
+        name: "twitter:description",
+        content:
+          "We are in continuous development of alliances and representations of the best manufacturing companies for the oil and gas industry."
+      },
+      {
+        name: "twitter:image",
+        content: "https://davecastworks.com/meta_640.jpg"
+      },
+      { name: "twitter:image:alt", content: "NeussTS Logo" }
+    ]
+  },
   name: "Products",
   components: {
     Banner,

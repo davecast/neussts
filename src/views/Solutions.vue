@@ -397,6 +397,44 @@ import NeButton from "@/components/Button.vue";
 import DcSection from "@/layouts/DcSection.vue";
 
 export default {
+  metaInfo: {
+    title: "Solutions",
+    meta: [
+      {
+        name: "description",
+        hid: "description",
+        content:
+          "We offer solutions to solve problems in the processes of Operations, Production, Maintenance and Acquisitions that may have in your company."
+      },
+      // Open Graph
+      { name: "og:title", content: "Solutions | Neuss Technical Services" },
+      {
+        name: "og:description",
+        content:
+          "We offer solutions to solve problems in the processes of Operations, Production, Maintenance and Acquisitions that may have in your company."
+      },
+      { name: "og:type", content: "website" },
+      { name: "og:url", content: "https://www.neuss-ts.com/" },
+      { name: "og:image", content: "https://davecastworks.com/meta_640.jpg" },
+      // Twitter Card
+      { name: "twitter:card", content: "summary" },
+      { name: "twitter:site", content: "@neussts" },
+      {
+        name: "twitter:title",
+        content: "Solutions | Neuss Technical Services"
+      },
+      {
+        name: "twitter:description",
+        content:
+          "We offer solutions to solve problems in the processes of Operations, Production, Maintenance and Acquisitions that may have in your company."
+      },
+      {
+        name: "twitter:image",
+        content: "https://davecastworks.com/meta_640.jpg"
+      },
+      { name: "twitter:image:alt", content: "NeussTS Logo" }
+    ]
+  },
   name: "Solutions",
   components: {
     Banner,

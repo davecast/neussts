@@ -312,6 +312,41 @@ import Feature from "@/components/Feature.vue";
 import DcSection from "@/layouts/DcSection.vue";
 
 export default {
+  metaInfo: {
+    title: "Company",
+    meta: [
+      {
+        name: "description",
+        hid: "description",
+        content:
+          "We offer the highest quality of services and products through simple processes, and effective communication, and promote them in emerging markets"
+      },
+      // Open Graph
+      { name: "og:title", content: "Company | Neuss Technical Services" },
+      {
+        name: "og:description",
+        content:
+          "We offer the highest quality of services and products through simple processes, and effective communication, and promote them in emerging markets"
+      },
+      { name: "og:type", content: "website" },
+      { name: "og:url", content: "https://www.neuss-ts.com/" },
+      { name: "og:image", content: "https://davecastworks.com/meta_640.jpg" },
+      // Twitter Card
+      { name: "twitter:card", content: "summary" },
+      { name: "twitter:site", content: "@neussts" },
+      { name: "twitter:title", content: "Company | Neuss Technical Services" },
+      {
+        name: "twitter:description",
+        content:
+          "We offer the highest quality of services and products through simple processes, and effective communication, and promote them in emerging markets"
+      },
+      {
+        name: "twitter:image",
+        content: "https://davecastworks.com/meta_640.jpg"
+      },
+      { name: "twitter:image:alt", content: "NeussTS Logo" }
+    ]
+  },
   name: "Company",
   components: {
     Banner,
