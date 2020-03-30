@@ -301,5 +301,10 @@ export default {
   .header__logo {
     max-width: 180px;
   }
+  .header__logo figure img {
+    width: 180px;
+    height: 100%;
+    visibility: visible !important;
+  }
 }
 </style>
