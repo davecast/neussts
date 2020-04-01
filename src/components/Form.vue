@@ -239,8 +239,6 @@ export default {
   box-sizing: border-box;
   border: 1px solid #cccccc;
 }
-.form__loader--spiner {
-}
 .form {
   background-color: #efefef;
   padding: 40px 30px;

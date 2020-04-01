@@ -170,6 +170,18 @@ p {
   background-color: #4c4c4c;
 }
 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex__start__center {
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex__center__center {
+  justify-content: center;
+  align-items: center;
+}
 .grid {
   display: grid;
 }
@@ -348,7 +360,7 @@ p {
 
 .list {
   font-size: 14px;
-  line-height: 14px;
+  line-height: 18px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -356,6 +368,7 @@ p {
 }
 .list i {
   margin-right: 5px;
+  margin-top: 3px;
 }
 .list--line-height p {
   line-height: 24px;
@@ -428,6 +441,10 @@ p {
   }
   .order--3--tb {
     order: 3;
+  }
+  .flex__evenly__center--tb {
+    justify-content: space-evenly;
+    align-items: center;
   }
   .container {
     max-width: 565px;

@@ -97,7 +97,7 @@ export default {
 @media screen and (max-width: 980px) {
   .title {
     padding-bottom: 20px;
-    margin-bottom: 15px !important;
+    margin-bottom: 25px !important;
   }
   .title__first {
     font-size: 24px;

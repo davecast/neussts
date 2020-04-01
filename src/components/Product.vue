@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article class="product">
     <figure class="image">
       <img :src="require(`@/assets/${this.image}`)" :alt="this.title" />
     </figure>
@@ -31,6 +31,7 @@ export default {
 }
 .image img {
   max-width: 100%;
+  width: 100%;
 }
 .title {
   position: relative;
@@ -54,9 +55,28 @@ export default {
   line-height: 24px;
   color: #aaaaaa;
 }
+.product__feature {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: wrap;
+  padding: 5px 0px 10px;
+}
+.product__feature li {
+  font-size: 12px;
+  line-height: 12px;
+  padding: 5px 10px;
+  background: rgb(45, 45, 45);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
 @media screen and (max-width: 595px) {
   .image {
-    max-height: 150px;
+    max-height: 250px;
     overflow: hidden;
   }
   .image img {
