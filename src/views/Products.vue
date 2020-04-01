@@ -703,22 +703,25 @@ export default {
         this.windowWidth > 800 ? "8px" : "15px";
       this.$refs.products.style.gridAutoRows =
         this.windowWidth > 800 ? "8px" : "15px";
+    },
+    setRows() {
+      console.log("2");
+      this.$refs.products.children.forEach(element => {
+        let dividerNumber = this.windowWidth > 800 ? 8 : 15;
+        element.style.gridRowEnd = `span ${Math.ceil(
+          element.offsetHeight / dividerNumber
+        ) + 4}`;
+      });
+
+      this.setParentStyle();
     }
   },
   mounted() {
     window.scrollTo(0, 0);
     if (this.windowWidth > 595) {
-      window.addEventListener("load", () => {
-        this.$refs.products.children.forEach(element => {
-          console.log(element.offsetHeight);
-          let dividerNumber = this.windowWidth > 800 ? 8 : 15;
-          element.style.gridRowEnd = `span ${Math.ceil(
-            element.offsetHeight / dividerNumber
-          ) + 4}`;
-        });
-
-        this.setParentStyle();
-      });
+      setTimeout(() => {
+        this.$nextTick(this.setRows());
+      }, 1000);
     }
   }
 };
