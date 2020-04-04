@@ -36,7 +36,7 @@
               engine/generator controls and alarm panels.
             </p>
           </Product>
-          <Product image="products/2.png" title="Portable Power on Demand">
+          <Product image="products/2.jpg" title="Portable Power on Demand">
             <p class="text--small mb--x1">
               MPU generator sets are rugged in design for service in heavy duty
               industrial and utility power applications. Generator Sets offer
@@ -52,7 +52,7 @@
             </p>
             <p></p>
           </Product>
-          <Product image="products/3.png" title="Solar Panel">
+          <Product image="products/3.jpg" title="Solar Panel">
             <ul>
               <List text="Monocrystalline Silicon" />
               <List text="Polycrystalline Silicon" />
@@ -63,7 +63,7 @@
               <List text="String Ribbon" />
             </ul>
           </Product>
-          <Product image="products/4.png" title="Solar Light LED">
+          <Product image="products/4.jpg" title="Solar Light LED">
             <p class="text--small mb--x1">
               Solar Light Led is a new generation of smart street LED luminaire
               which is widely used in street, patio, garden, pathway, park, etc.
@@ -99,7 +99,7 @@ batteries are recyclable"
             </ul>
           </Product>
           <Product
-            image="products/5.png"
+            image="products/5.jpg"
             title="Here can put the name for product"
           >
             <p class="text--small mb--x1">
@@ -129,7 +129,7 @@ batteries are recyclable"
               <li>Pool pump</li>
             </ul>
           </Product>
-          <Product image="products/6.png" title="Solar Power Bank">
+          <Product image="products/6.jpg" title="Solar Power Bank">
             <p class="text--smal mb--x1">
               SOLAR POWER BANK is the ideal energy storage solution for whenever
               and wherever you need power the most. Similar to a big battery
@@ -164,7 +164,7 @@ batteries are recyclable"
               can be changed easily
             </p>
           </Product>
-          <Product image="products/8.png" title="PCP Drive Head">
+          <Product image="products/8.jpg" title="PCP Drive Head">
             <p class="text--small mb--x1">
               The Rod Driven System for progressive cavity pump (PCP) in that
               the downhole positive displacement rotary gear pump is driven by a
@@ -232,7 +232,7 @@ batteries are recyclable"
               damage
             </p>
           </Product>
-          <Product image="products/12.png" title="Heat Shrinkable Sleeve">
+          <Product image="products/12.jpg" title="Heat Shrinkable Sleeve">
             <p class="text--small mb--x1">
               Heat Shrinkable Sleeve is mainly used in coating the weld joint of
               buried steel pipeline and insulated pipeline, especially for
@@ -385,7 +385,7 @@ Single Coild Spring Seal"
               and slip-type.
             </p>
           </Product>
-          <Product image="products/20.png" title="Casing Head">
+          <Product image="products/20.jpg" title="Casing Head">
             <p class="text--small mb--x1">
               Steel tubing is applied to umbilicals and chemical injection
               systems play an effective role in chemical storage and delivery at
@@ -436,7 +436,7 @@ Coiled Tubing Process: TIG welded and cold drawn / Seamless and cold drawn"
               <List text="Capillary tubing" />
             </ul>
           </Product>
-          <Product image="products/21.png" title="Flexible Conduits">
+          <Product image="products/21.jpg" title="Flexible Conduits">
             <p class="text--small mb--x1">
               The Liquatite® line includes nearly 50 varieties of flexible
               electrical conduits for contractors, OEMs, industrial maintenance
@@ -564,7 +564,7 @@ Carbon Monoxide"
             </p>
           </Product>
           <Product
-            image="products/25.png"
+            image="products/25.jpg"
             title=" Sucker Rods &amp; Downhole Pums "
           >
             <p class="text--small">
@@ -578,7 +578,7 @@ Carbon Monoxide"
             </p>
           </Product>
           <Product
-            image="products/26.png"
+            image="products/26.jpg"
             title="Spare Parts &amp; Rig Accessories"
           >
             <p class="text--small mb--x1">
