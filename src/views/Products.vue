@@ -738,7 +738,7 @@ export default {
   }
   .products {
     grid-template-columns: repeat(3, 328px);
-    grid-gap: 0px 20px;
+    grid-gap: 25px;
   }
 }
 @media screen and (max-width: 1040px) {
@@ -747,7 +747,7 @@ export default {
   }
   .products {
     grid-template-columns: repeat(3, 246px);
-    grid-gap: 0px 15px;
+    grid-gap: 25px;
   }
 }
 @media screen and (max-width: 980px) {
@@ -765,7 +765,7 @@ export default {
   }
   .products {
     grid-template-columns: repeat(2, 282.5px);
-    grid-gap: 0px 15px;
+    grid-gap: 20px;
   }
 }
 @media screen and (max-width: 768px) {

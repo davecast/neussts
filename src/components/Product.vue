@@ -27,41 +27,41 @@ export default {
   props: {
     image: {
       type: String,
-      default: "",
+      default: ""
     },
     title: {
       type: String,
-      default: "",
-    },
+      default: ""
+    }
   },
   data() {
     return {
-      isOpen: false,
+      isOpen: false
     };
   },
   methods: {
     togglePop() {
       this.isOpen = !this.isOpen;
       $body.classList.toggle("body__overflow");
-    },
+    }
   },
   computed: {
     productClass: function() {
       return {
-        product__pop__active: this.isOpen,
+        product__pop__active: this.isOpen
       };
     },
     overlayClass: function() {
       return {
-        product__overlay__active: this.isOpen,
+        product__overlay__active: this.isOpen
       };
     },
     closeClass: function() {
       return {
-        product__close__active: this.isOpen,
+        product__close__active: this.isOpen
       };
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -198,7 +198,8 @@ export default {
   top: 100px;
   left: 0;
   max-width: 768px;
-  max-height: 400px;
+  box-sizing: border-box;
+  height: calc(100vh - 200px);
   overflow-y: auto;
   right: 0;
   margin: 0 auto;
@@ -232,6 +233,15 @@ export default {
   object-fit: contain;
   max-height: 300px;
 }
+@media screen and (max-width: 800px) {
+  .product__pop__active {
+    max-width: calc(100vw - 160px);
+  }
+  .product__close {
+    top: 35px;
+    right: 35px;
+  }
+}
 @media screen and (max-width: 595px) {
   .image {
     max-height: 250px;
@@ -240,6 +250,10 @@ export default {
   .image img {
     object-fit: cover;
     height: 100%;
+  }
+  .product__pop__active {
+    padding: 20px;
+    max-width: calc(100vw - 60px);
   }
 }
 </style>
