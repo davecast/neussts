@@ -36,7 +36,7 @@
               engine/generator controls and alarm panels.
             </p>
           </Product>
-          <Product image="products/2.jpg" title="Portable Power on Demand">
+          <Product image="products/2.png" title="Portable Power on Demand">
             <p class="text--small mb--x1">
               MPU generator sets are rugged in design for service in heavy duty
               industrial and utility power applications. Generator Sets offer
@@ -52,7 +52,7 @@
             </p>
             <p></p>
           </Product>
-          <Product image="products/3.jpg" title="Solar Panel">
+          <Product image="products/3.png" title="Solar Panel">
             <ul>
               <List text="Monocrystalline Silicon" />
               <List text="Polycrystalline Silicon" />
@@ -63,12 +63,7 @@
               <List text="String Ribbon" />
             </ul>
           </Product>
-          <Product image="products/4.jpg" title="Solar Light LED">
-            <ul class="product__feature">
-              <li>IP 65 Water Proof</li>
-              <li>12 Hour Autonomy</li>
-              <li>Camera Integrated</li>
-            </ul>
+          <Product image="products/4.png" title="Solar Light LED">
             <p class="text--small mb--x1">
               Solar Light Led is a new generation of smart street LED luminaire
               which is widely used in street, patio, garden, pathway, park, etc.
@@ -79,7 +74,7 @@
               electricity
             </p>
             <h4 class="mb--x1">Features</h4>
-            <ul>
+            <ul class="mb--x1">
               <List text="Completely Standalone" />
               <List
                 text="Self-contained Solar Street Light System/ Solar Flood Light/ Solar Flag Pole Light, Replacement
@@ -97,15 +92,16 @@ safety, strong thermal stability, tolerance to abuse, high current rating and 1,
 batteries are recyclable"
               />
             </ul>
+            <ul class="product__feature">
+              <li>IP 65 Water Proof</li>
+              <li>12 Hour Autonomy</li>
+              <li>Camera Integrated</li>
+            </ul>
           </Product>
           <Product
-            image="products/5.jpg"
+            image="products/5.png"
             title="Here can put the name for product"
           >
-            <ul class="product__feature">
-              <li>Pump</li>
-              <li>Pool pump</li>
-            </ul>
             <p class="text--small mb--x1">
               Solar Pumping systems considering the need of water in remote
               areas with NO power distribution &amp; understanding the very
@@ -118,7 +114,7 @@ batteries are recyclable"
               deliver sustained high efficiency. Available until 300 meter.
             </p>
             <h4 class="mb--x1">Features</h4>
-            <ul>
+            <ul class="mb--x1">
               <List text="More longevity &amp; Hygiene" />
               <List text="High operating efficiency" />
               <List text="Floating impeller design prevents sand blockages" />
@@ -128,12 +124,12 @@ batteries are recyclable"
               <List text="Can handle more up thrust loads" />
               <List text="NEMA mounting standard" />
             </ul>
-          </Product>
-          <Product image="products/6.jpg" title="Solar Power Bank">
             <ul class="product__feature">
-              <li>Container Energy Storage</li>
-              <li>Scalable in size</li>
+              <li>Pump</li>
+              <li>Pool pump</li>
             </ul>
+          </Product>
+          <Product image="products/6.png" title="Solar Power Bank">
             <p class="text--smal mb--x1">
               SOLAR POWER BANK is the ideal energy storage solution for whenever
               and wherever you need power the most. Similar to a big battery
@@ -143,13 +139,17 @@ batteries are recyclable"
               local output from solar panels, wind turbines or generator sets –
               ready to deliver power at the flick of a switch.
             </p>
-            <p class="text--small">
+            <p class="text--smal mb--x1">
               Whether you need a fully autonomous off-grid facility or simply
               want to manage your power supplies more efficiently – such as
               engaging in peak shaving, load-shifting or grid stabilization –
               the power bank is a scalable, plug-and-play solution that provides
               reliable power, anytime and anywhere.
             </p>
+            <ul class="product__feature">
+              <li>Container Energy Storage</li>
+              <li>Scalable in size</li>
+            </ul>
           </Product>
           <Product image="products/7.jpg" title="Permanent Magnet Motor">
             <p class="text--small mb--x1">
@@ -164,7 +164,7 @@ batteries are recyclable"
               can be changed easily
             </p>
           </Product>
-          <Product image="products/8.jpg" title="PCP Drive Head">
+          <Product image="products/8.png" title="PCP Drive Head">
             <p class="text--small mb--x1">
               The Rod Driven System for progressive cavity pump (PCP) in that
               the downhole positive displacement rotary gear pump is driven by a
@@ -232,7 +232,7 @@ batteries are recyclable"
               damage
             </p>
           </Product>
-          <Product image="products/12.jpg" title="Heat Shrinkable Sleeve">
+          <Product image="products/12.png" title="Heat Shrinkable Sleeve">
             <p class="text--small mb--x1">
               Heat Shrinkable Sleeve is mainly used in coating the weld joint of
               buried steel pipeline and insulated pipeline, especially for
@@ -265,14 +265,8 @@ batteries are recyclable"
             </ul>
           </Product>
           <Product image="products/14.jpg" title="Globe Control Valve">
-            <ul class="product__feature">
-              <li>Single Seated</li>
-              <li>Double Seated</li>
-              <li>Three Way</li>
-              <li>Angle</li>
-            </ul>
             <h4 class="mb--x1">Standard:</h4>
-            <ul>
+            <ul class="mb--x1">
               <List title="Design:" text="ASME-B-16.34, SFS EN 12516-2" />
               <List title="F/F:" text="ISA 75.08.01, B16.10" />
               <List title="Testing:" text="FCI70-2" />
@@ -283,16 +277,16 @@ SCREWED &amp; SOCKET-B16.11
 BUTTWELD-B16.25"
               />
             </ul>
+            <ul class="product__feature">
+              <li>Single Seated</li>
+              <li>Double Seated</li>
+              <li>Three Way</li>
+              <li>Angle</li>
+            </ul>
           </Product>
           <Product image="products/15.jpg" title="Ball Valve">
-            <ul class="product__feature">
-              <li>Floating Ball</li>
-              <li>Trunion</li>
-              <li>Top Entry</li>
-              <li>Fully Welded</li>
-            </ul>
             <h4 class="mb--x1">Standard:</h4>
-            <ul>
+            <ul class="mb--x1">
               <List title="Design:" text="API-6D/ASME-B-16.34" />
               <List title="F/F:" text="API-6D/ASME-B-16.10" />
               <List title="Testing:" text="API-6D/API-598/ISO-5208/EN-12266" />
@@ -304,17 +298,16 @@ BUTTWELD-B16.25"
                 text="FLANGE-B16.5,B16.47,EN1092-1, BUTTWELD-B16.25"
               />
             </ul>
+            <ul class="product__feature">
+              <li>Floating Ball</li>
+              <li>Trunion</li>
+              <li>Top Entry</li>
+              <li>Fully Welded</li>
+            </ul>
           </Product>
           <Product image="products/16.jpg" title="Butterfly Valve">
-            <ul class="product__feature">
-              <li>Double Offset</li>
-              <li>Triplex Offset</li>
-              <li>Resilient Seated</li>
-              <li>Clearance Type</li>
-              <li>AWWA Butterfly Valve</li>
-            </ul>
             <h4 class="mb--x1">Standard:</h4>
-            <ul>
+            <ul class="mb--x1">
               <List title="Design:" text="BS-5155/API-609/ASME-B-16.34" />
               <List title="F/F:" text="BS-5155 /API-609" />
               <List title="Proof of design Test:" text="AWWA-C-504" />
@@ -327,6 +320,13 @@ BUTTWELD-B16.25"
                 text="FLANGE/WAFER-B16.5,B16.47, EN1092-1
 SCREWED &amp; SOCKET-B16.11"
               />
+            </ul>
+            <ul class="product__feature">
+              <li>Double Offset</li>
+              <li>Triplex Offset</li>
+              <li>Resilient Seated</li>
+              <li>Clearance Type</li>
+              <li>AWWA Butterfly Valve</li>
             </ul>
           </Product>
           <Product image="products/17.jpg" title="Special Control Valve">
@@ -385,7 +385,7 @@ Single Coild Spring Seal"
               and slip-type.
             </p>
           </Product>
-          <Product image="products/20.jpg" title="Casing Head">
+          <Product image="products/20.png" title="Casing Head">
             <p class="text--small mb--x1">
               Steel tubing is applied to umbilicals and chemical injection
               systems play an effective role in chemical storage and delivery at
@@ -436,7 +436,7 @@ Coiled Tubing Process: TIG welded and cold drawn / Seamless and cold drawn"
               <List text="Capillary tubing" />
             </ul>
           </Product>
-          <Product image="products/21.jpg" title="Flexible Conduits">
+          <Product image="products/21.png" title="Flexible Conduits">
             <p class="text--small mb--x1">
               The Liquatite® line includes nearly 50 varieties of flexible
               electrical conduits for contractors, OEMs, industrial maintenance
@@ -564,7 +564,7 @@ Carbon Monoxide"
             </p>
           </Product>
           <Product
-            image="products/25.jpg"
+            image="products/25.png"
             title=" Sucker Rods &amp; Downhole Pums "
           >
             <p class="text--small">
@@ -578,7 +578,7 @@ Carbon Monoxide"
             </p>
           </Product>
           <Product
-            image="products/26.jpg"
+            image="products/26.png"
             title="Spare Parts &amp; Rig Accessories"
           >
             <p class="text--small mb--x1">
@@ -718,19 +718,19 @@ export default {
   },
   mounted() {
     window.scrollTo(0, 0);
-    if (this.windowWidth > 595) {
+    /*if (this.windowWidth > 595) {
       setTimeout(() => {
         this.$nextTick(this.setRows());
       }, 1000);
-    }
+    }*/
   }
 };
 </script>
 
 <style scoped>
 .products {
-  grid-template-columns: repeat(3, 377px);
-  grid-gap: 0px 35px;
+  grid-template-columns: repeat(4, 277.5px);
+  grid-gap: 30px;
 }
 @media screen and (max-width: 1240px) {
   .container {
