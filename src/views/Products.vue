@@ -36,7 +36,11 @@
               engine/generator controls and alarm panels.
             </p>
           </Product>
-          <Product image="products/2.jpg" title="Portable Power on Demand">
+          <Product
+            class="image__contain"
+            image="products/2.jpg"
+            title="Portable Power on Demand"
+          >
             <p class="text--small mb--x1">
               MPU generator sets are rugged in design for service in heavy duty
               industrial and utility power applications. Generator Sets offer
@@ -164,7 +168,11 @@ batteries are recyclable"
               can be changed easily
             </p>
           </Product>
-          <Product image="products/8.jpg" title="PCP Drive Head">
+          <Product
+            class="image__contain"
+            image="products/8.jpg"
+            title="PCP Drive Head"
+          >
             <p class="text--small mb--x1">
               The Rod Driven System for progressive cavity pump (PCP) in that
               the downhole positive displacement rotary gear pump is driven by a

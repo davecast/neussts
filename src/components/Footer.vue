@@ -35,7 +35,12 @@
           </div>
           <div class="grid__item">
             <h3 class="footer__title text--white mb--x2">social media</h3>
-            <Social alignItems="right" />
+            <Social
+              facebook="https://www.facebook.com/Neuss-Techical-Services-Inc-106581107673074"
+              instagram="https://www.instagram.com/neuss_ts_inc/"
+              linkedin="https://www.linkedin.com/company/neuss-technical-services/"
+              alignItems="right"
+            />
           </div>
         </section>
       </div>

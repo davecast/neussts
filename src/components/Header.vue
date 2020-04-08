@@ -5,9 +5,9 @@
         <div class="header__content">
           <Flags />
           <Social
-            facebook="https://www.facebook.com/"
-            twitter="https://twitter.com/"
-            linkeding="https://www.linkedin.com/"
+            facebook="https://www.facebook.com/Neuss-Techical-Services-Inc-106581107673074"
+            instagram="https://www.instagram.com/neuss_ts_inc/"
+            linkedin="https://www.linkedin.com/company/neuss-technical-services/"
           />
         </div>
       </div>

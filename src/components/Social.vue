@@ -1,17 +1,17 @@
 <template>
   <ul class="social">
     <li :style="styleLi">
-      <a :href="facebook">
+      <a :href="facebook" target="_blank">
         <i class="wz-icon wz-facebook"></i>
       </a>
     </li>
     <li :style="styleLi">
-      <a :href="twitter">
-        <i class="wz-icon wz-twitter-brands"></i>
+      <a :href="instagram" target="_blank">
+        <i class="wz-icon wz-instagram"></i>
       </a>
     </li>
     <li :style="styleLi">
-      <a :href="linkedin">
+      <a :href="linkedin" target="_blank">
         <i class="wz-icon wz-linkedin-brands"></i>
       </a>
     </li>
@@ -25,7 +25,7 @@ export default {
     facebook: {
       type: String
     },
-    twitter: {
+    instagram: {
       type: String
     },
     linkedin: {

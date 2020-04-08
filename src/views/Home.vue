@@ -70,6 +70,7 @@
         </p>
         <Slider
           class="mb--x3"
+          infinite
           :pictures="[
             '/headstage/ansi.png',
             '/headstage/apiq.png',

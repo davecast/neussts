@@ -78,6 +78,9 @@ export default {
   object-position: center;
   height: 100%;
 }
+.image__contain .image img {
+  object-fit: contain;
+}
 .title {
   position: relative;
   padding-bottom: 15px;

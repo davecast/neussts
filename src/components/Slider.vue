@@ -26,12 +26,27 @@ export default {
     },
     timeDelay: {
       type: Number,
+      default: 600
+    },
+    timeStart: {
+      type: Number,
       default: 3000
+    },
+    velocity: {
+      type: Number,
+      default: 15
+    },
+    infinite: {
+      type: Boolean,
+      default: function() {
+        return false;
+      }
     }
   },
   data() {
     return {
-      interation: ""
+      interation: "",
+      marginStart: 0
     };
   },
   methods: {
@@ -59,21 +74,47 @@ export default {
       this.interation = setInterval(() => {
         this.handleMove();
       }, this.timeDelay);
+    },
+    handleInfinitePlay() {
+      this.interation = setInterval(() => {
+        if (this.marginStart == 153) {
+          //$brandCarousel.insertBefore( $brandCarousel.firstElementChild, $brandCarousel.lastElementChild.nextSibling);
+          this.$refs.dcSlider.insertBefore(
+            this.$refs.dcSlider.firstElementChild,
+            this.$refs.dcSlider.lastElementChild.nextSibling
+          );
+          this.marginStart = this.marginStart - 153;
+        }
+        this.marginStart += 1;
+        this.$refs.dcSlider.style.marginLeft = `-${this.marginStart}px`;
+      }, this.velocity);
+    },
+    infinitePlay() {
+      this.interation = setInterval(() => {
+        clearInterval(this.interation);
+        this.handleInfinitePlay();
+      }, this.timeStart);
     }
   },
   created() {
     if (this.pictures.length > 0) {
-      this.handlePlay();
+      if (this.infinite) {
+        this.infinitePlay();
+      } else {
+        this.handlePlay();
+      }
     }
   },
   mounted() {
     this.$refs.dcSlider.style.gridTemplate = `1fr / repeat(${this.$refs.dcSlider.children.length}, 134px)`;
     this.$refs.dcSlider.style.gridGap = `20px`;
-    this.$refs.dcSlider.style.marginLeft = `-154px`;
-    this.$refs.dcSlider.insertBefore(
-      this.$refs.dcSlider.lastElementChild,
-      this.$refs.dcSlider.firstElementChild
-    );
+    if (!this.infinite) {
+      this.$refs.dcSlider.style.marginLeft = `-154px`;
+      this.$refs.dcSlider.insertBefore(
+        this.$refs.dcSlider.lastElementChild,
+        this.$refs.dcSlider.firstElementChild
+      );
+    }
   },
   beforeDestroy() {
     this.handleClear();
@@ -88,9 +129,11 @@ export default {
   margin-right: auto;
   padding: 20px;
   overflow: hidden;
+  position: relative;
 }
 .brand__carousel--content {
   display: grid;
+  position: relative;
 }
 .brand__carousel--list {
   width: 134px;
