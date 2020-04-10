@@ -49,7 +49,7 @@
       <div class="container">
         <div class="footer__bottom">
           <p>
-            © 2020 <strong>NEUSS TECNICAL SERVICES</strong>. All Rights
+            © 2020 <strong>NEUSS TECHNICAL SERVICES, INC.</strong> All Rights
             Reserved.
           </p>
         </div>

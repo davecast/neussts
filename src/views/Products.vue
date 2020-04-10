@@ -102,10 +102,7 @@ batteries are recyclable"
               <li>Camera Integrated</li>
             </ul>
           </Product>
-          <Product
-            image="products/5.jpg"
-            title="Here can put the name for product"
-          >
+          <Product image="products/5.jpg" title="Solar Submersible Pumps">
             <p class="text--small mb--x1">
               Solar Pumping systems considering the need of water in remote
               areas with NO power distribution &amp; understanding the very
@@ -393,7 +390,10 @@ Single Coild Spring Seal"
               and slip-type.
             </p>
           </Product>
-          <Product image="products/20.jpg" title="Casing Head">
+          <Product
+            image="products/20.jpg"
+            title="Chemical Injection Line Tubing"
+          >
             <p class="text--small mb--x1">
               Steel tubing is applied to umbilicals and chemical injection
               systems play an effective role in chemical storage and delivery at

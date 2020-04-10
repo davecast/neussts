@@ -19,10 +19,10 @@
           class="grid grid--4--12 grid__3 grid__gap--35 mb--x3 mt--x3--lg features"
         >
           <Feature image="exp_1.png" link="/solutions#consulting">
-            CONSULTING <br />MANAGEMENT SERVICE</Feature
+            CONSULTING <br />MANAGEMENT SERVICES</Feature
           >
           <Feature image="exp_2.png" link="/solutions#supply">
-            SUPLY AND <br />PROCUREMENT SERVICES
+            SUPPLY AND <br />PROCUREMENT SERVICES
           </Feature>
           <Feature image="exp_3.png" link="/solutions#operations">
             OPERATION AND <br />
