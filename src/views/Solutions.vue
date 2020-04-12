@@ -370,7 +370,7 @@
         </div>
       </div>
     </DcSection>
-    <CallAction backgroundImage="call__contact.png" backgroundColor="#efdc30">
+    <CallAction backgroundImage="call__contact.jpg" backgroundColor="#efdc30">
       <h2 class="title__section text--white mb--x3">
         HAVE A QUESTIONS OR HAVE A SPECIAL REQUEST?
       </h2>
