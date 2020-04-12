@@ -75,7 +75,7 @@
             <p class="text--small mb--x1">
               It is made up of solar panel, battery, light source, controller,
               and PIR sensor, it can work intelligently without a wire and
-              electricity
+              electricity.
             </p>
             <h4 class="mb--x1">Features</h4>
             <ul class="mb--x1">
@@ -102,7 +102,7 @@ batteries are recyclable"
               <li>Camera Integrated</li>
             </ul>
           </Product>
-          <Product image="products/5.jpg" title="Solar Submersible Pumps">
+          <Product image="products/5.jpg" title="Submersible Solar Pumps">
             <p class="text--small mb--x1">
               Solar Pumping systems considering the need of water in remote
               areas with NO power distribution &amp; understanding the very
@@ -162,7 +162,7 @@ batteries are recyclable"
               Motor efficiency is above IE4 grade (ultra high efficiency: above
               GB1 grade). Due to the same seat number design with the
               asynchronous motor, also the installation size is the same, which
-              can be changed easily
+              can be changed easily.
             </p>
           </Product>
           <Product
@@ -179,7 +179,7 @@ batteries are recyclable"
             </p>
             <p class="text--small">
               Listed are the operating features and advantages of the gear pump
-              over both PCP and other reciprocating rod-lift systems
+              over both PCP and other reciprocating rod-lift systems.
             </p>
           </Product>
           <Product image="products/9.jpg" title="VFD Rod Pump">
@@ -234,7 +234,7 @@ batteries are recyclable"
               significantly reduced when compared with that of a standard start.
               This capability is valuable in gassy or sandy wells. In some
               cases, slowly ramping a pump up to operating speed may avoid pump
-              damage
+              damage.
             </p>
           </Product>
           <Product image="products/12.jpg" title="Heat Shrinkable Sleeve">
@@ -259,7 +259,7 @@ batteries are recyclable"
           <Product image="products/13.jpg" title="OCTG">
             <p class="text--small mb--x1">
               Oil Country Tubular Goods are used both onshore and offshore. Each
-              wellbore proceeds in multiple phases, during which
+              wellbore proceeds in multiple phases, during which.
             </p>
             <ul>
               <List text="Drill pipe" />
@@ -538,7 +538,7 @@ Carbon Monoxide"
               />
             </ul>
           </Product>
-          <Product image="products/24.jpg" title="Metering Dosing Pums">
+          <Product image="products/24.jpg" title="Metering Dosing Pumps">
             <p class="text--small mb--x1">
               Dosing pump for suitable service conditions involving hazardous
               toxic, radioactive or poisonous liquid where product leakage is
@@ -573,7 +573,7 @@ Carbon Monoxide"
           </Product>
           <Product
             image="products/25.jpg"
-            title=" Sucker Rods &amp; Downhole Pums "
+            title=" Sucker Rods &amp; Downhole Pumps "
           >
             <p class="text--small">
               Dynamic Torque Anchor, Fiberglass rods, Gas Anchor, Gas
@@ -598,7 +598,7 @@ Carbon Monoxide"
               Engines, Drill Collars, Drill Pipes, Drilling Line, Workover Rig
               Pressure Gauges, Casing Head, Rotary Tables, Power Tong, Spiders,
               Swabbing tool, Tubing Elevator, Tubing Head, Wireline Unit, Tubing
-              Hanger
+              Hanger.
             </p>
           </Product>
         </div>
