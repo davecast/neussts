@@ -1,4 +1,4 @@
-const url = "https://davecastworks.com/mailer/";
+const url = "https://www.neuss-ts.com/mailer/";
 
 function sendPost(content) {
   let formData = new FormData();
