@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Banner type="small" img="contact-banner.jpg">
+    <Banner class="contact--banner" type="small">
       <h2
         class="banner__title--medium banner__title--separator text--white text--muli text--extrabold mb--x3"
       >
@@ -178,6 +178,9 @@ export default {
 </script>
 
 <style scoped>
+.contact--banner {
+  background-image: url("https://www.neuss-ts.com/img/conta.jpg") !important;
+}
 .grid_5_4_ {
   grid-template: 1fr / repeat(12, 1fr);
   grid-template-areas: ". form form form form form . info info info info .";
